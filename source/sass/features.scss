@@ -1,0 +1,55 @@
+.features {
+
+}
+
+.features__wrapper {
+
+}
+
+.features__title {
+  margin-bottom: 26px;
+
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: normal;
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+
+  margin-bottom: 45px;
+
+  list-style: none;
+
+}
+
+.features__item {
+
+}
+
+.features__item--useful {
+
+}
+
+.features__item--powder {
+
+}
+
+.features__item--hight-calorie {
+
+}
+
+.features__item--fast-result {
+
+}
+
+.features__description {
+  margin: 0;
+  padding: 0;
+
+  margin-bottom: 28px;
+  padding-left: 80px;
+
+  @include arial();
+}

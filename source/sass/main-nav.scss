@@ -1,0 +1,37 @@
+.main-nav {
+
+}
+
+.main-nav__toggle {
+
+}
+
+.main-nav__wrapper {
+
+}
+
+.main-nav__list {
+  @include list-reset();
+
+}
+
+.main-nav__item {
+  border-top: 1px solid $separator-light;
+  border-bottom: 1px solid $separator-light;
+}
+
+.main-nav__item--active {
+
+}
+
+.main-nav__link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  text-align: center;
+  color: $almost-black;
+
+  @include oswald-medium();
+
+  text-transform: uppercase;
+}

@@ -1,0 +1,121 @@
+.catalog {
+
+}
+
+.catalog__list {
+  @include list-reset();
+}
+
+.catalog__item {
+  display: flex;
+  flex-direction: column;
+  padding-top: 22px;
+  padding-bottom: 25px;
+
+  border-bottom: 1px solid $separator-light;
+}
+
+.catalog__item--chicken-500 {
+  background-image: url("../img/chicken-small-mobile@1x.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.catalog__item--chicken-1000 {
+  background-image: url("../img/chicken-big-mobile@1x.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.catalog__item--fish-500 {
+  background-image: url("../img/fish-small-mobile@1x.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.catalog__item--fish-1000 {
+  background-image: url("../img/fish-big-mobile@1x.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.catalog__item--buckwheat-500 {
+  background-image: url("../img/buckwheat-small-mobile@1x.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.catalog__item--buckwheat-1000 {
+  background-image: url("../img/buckwheat-big-mobile@1x.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.catalog__item--rice-500 {
+  background-image: url("../img/rice-small-mobile@1x.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.catalog__title {
+  margin: 0;
+  padding: 0;
+  padding-left: 140px;
+  padding-bottom: 15px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+
+  text-transform: uppercase;
+}
+
+.catalog__last-text {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10px;
+
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.catalog__last-small {
+  padding-bottom: 20px;
+
+  @include arial();
+  font-size: 12px;
+  line-height: 16px;
+
+  color: $grey;
+
+  text-align: center;
+}
+
+.catalog__link {
+  color: $almost-black;
+}
+
+.catalog__table {
+  padding-left: 140px;
+  padding-bottom: 22px;
+
+  @include arial();
+  font-size: 12px;
+  line-height: 16px;
+
+  color: $grey;
+}
+
+.catalog__button {
+  text-align: center;
+}
+
+.catalog__button-show-all {
+  color: $grey;
+  background-color: $white-grey-bg;
+
+  text-align: center;
+}

@@ -1,0 +1,113 @@
+.example {
+  padding-top: 20px;
+  margin-bottom: 30px;
+  background-color: $white-grey-bg;
+}
+
+.example__title {
+  margin: 0;
+  padding: 0;
+
+  padding-bottom: 25px;
+
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: normal;
+}
+
+.example__description {
+  margin: 0;
+  padding: 0;
+
+  margin-bottom: 25px;
+
+  @include arial();
+  font-size: 14px;
+  line-height: 18px;
+
+  color: $grey;
+}
+
+.example__parameters {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+}
+
+.example__fieldset {
+  display: flex;
+  width: 125px;
+
+  padding-top: 17px;
+  padding-bottom: 17px;
+
+  @include arial();
+  font-size: 12px;
+  line-height: 12px;
+
+  align: bottom;
+
+  color: $grey;
+
+  border-color: $separator-grey;
+}
+
+.example__legend {
+  width: 60px;
+  text-align: center;
+}
+
+.example__parameter {
+  margin: 0;
+  padding: 0;
+
+  @include oswald-regular;
+  font-size: 24px;
+  line-height: 24px;
+
+  color: $almost-black;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.example__expenses {
+  margin-bottom: 40px;
+
+  font-size: 14px;
+  line-height: 20px;
+
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+.example__slider {
+
+}
+
+.example__image {
+  margin-bottom: 32px;
+}
+
+.example__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-bottom: 17px;
+}
+
+.example__input {
+  width: 85px;
+  margin-left: 19px;
+  margin-right: 19px;
+}
+
+.example__before-after {
+  font-size: 16px;
+  line-height: 20px;
+
+  text-transform: uppercase;
+}

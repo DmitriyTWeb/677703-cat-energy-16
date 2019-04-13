@@ -1,0 +1,18 @@
+/* oswald-regular*/
+@font-face {
+  font-family: 'Oswald Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'),
+      url('../fonts/oswaldregular.woff2') format('woff2'), /* Super Modern Browsers */
+      url('../fonts/oswaldregular.woff') format('woff'), /* Modern Browsers */
+}
+/* oswald-medium*/
+@font-face {
+  font-family: 'Oswald Medium';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Oswald medium'), local('Oswald-Bold'),
+      url('../fonts/oswaldmedium.woff2') format('woff2'), /* Super Modern Browsers */
+      url('../fonts/oswald-v17-cyrillic_latin-700.woff') format('woff'), /* Modern Browsers */
+}

@@ -1,0 +1,35 @@
+.page-footer {
+  padding-top: 30px;
+
+  background-color: $white-grey-bg;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.page-footer__logo {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.page-footer__logo-image {
+
+}
+
+.page-footer__social {
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  border-top: 1px solid $separator-grey;
+  border-bottom: 1px solid $separator-grey;
+
+}
+
+.page-footer__copyright {
+
+}
