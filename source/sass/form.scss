@@ -8,7 +8,24 @@
   display: flex;
   flex-direction: column;
 
+  margin: 0;
+  padding: 0;
+
+  margin-bottom: 27px;
+
+  border: none;
   border-bottom: 1px solid $separator-light;
+}
+
+.form__subsection--contacts,
+.form__subsection--comments,
+.form__subsection--options {
+  margin-bottom: 31px;
+  border: none;
+}
+
+.form__subsection--options {
+  margin-bottom: 0;
 }
 
 .form__item {
@@ -18,13 +35,16 @@
   margin-bottom: 15px;
 }
 
+.form__item:last-child {
+  margin-bottom: 23px;
+}
 
 .form__item--contacts {
   margin-bottom: 30px;
 }
 
-.form__item:last-child {
-  margin-bottom: 23px;
+.form__item--contacts:last-child {
+  margin-bottom: 0;
 }
 
 .form__label {
@@ -54,7 +74,8 @@
   padding-bottom: 14px;
   padding-left: 15px;
 
-  @include oswald-regular();
+  font-family: $base-font, $second-font, sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
 
@@ -63,40 +84,22 @@
   text-transform: uppercase;
 }
 
+.form__input--contacts,
+.form__input--phone {
+  padding-right: 40px;
+}
+
 .form__input--contacts {
-  padding-right: 35px;
-}
-
-.form__input--contacts::after {
-  content: "dgsdfgsgfsfg";
-  position: absolute;
-
-  top: 10px;
-  right: -20px;
-
-
-  width: 17px;
-  height: 13px;
-
   background-image: url("../img/icon-mail.svg");
-  // background-position: 0 0;
-  // background-repeat: no-repeat;
+  background-size: 17px 13px;
+  background-position: right 15px center;
+  background-repeat: no-repeat;
 }
 
-.form__input--phone::after {
-  position: absolute;
-  content: "";
-
-
-  top:0;
-  right: 0;
-
-
-  width: 20px;
-  height: 20px;
-
+.form__input--phone {
   background-image: url("../img/icon-phone.svg");
-  background-position: 0 0;
+  background-size: 20px 20px;
+  background-position: right 11px center;
   background-repeat: no-repeat;
 }
 
@@ -107,6 +110,8 @@
 .form__title {
   display: flex;
   align-items: center;
+
+  margin-bottom: 30px;
 
   font-size: 24px;
   line-height: 24px;
@@ -126,14 +131,13 @@
 }
 
 .form__textarea {
+  width: 100%;
   margin: 0;
-  padding: 14px;
-
-  margin-bottom: 30px;
+  padding: 13px;
 
   min-height: 150px;
 
-  @include oswald-regular();
+  font-family: $base-font, $second-font, sans-serif;
   font-size: 16px;
   line-height: 18px;
 
@@ -150,9 +154,7 @@
   margin: 0;
   padding: 0;
 
-  margin-bottom: 33px;
-
-  @include arial();
+  font-family: $second-font, sans-serif;
   font-size: 14px;
   line-height: 16px;
 

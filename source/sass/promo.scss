@@ -1,20 +1,17 @@
 .promo {
+  display: flex;
+  align-items: stretch;
   margin-bottom: 35px;
 }
 
-.promo__wrapper {
-
-}
-
 .promo__link {
-  display: block;
-  width: 280px;
-  height: 289px;
-
+  padding-bottom: 44px;
   text-align: center;
+  flex-grow: 1;
+  background-color: $light-green;
 
   background-image: url("../img/gift-photo-mobile@1x.jpg");
-  background-position: 0 0;
+  background-position: center;
   background-repeat: no-repeat;
 
   cursor: pointer;
@@ -28,7 +25,7 @@
   margin: 0 auto;
   padding-top: 187px;
 
-  @include arial();
+  font-family: $second-font, sans-serif;
   font-size: 16px;
   line-height: 20px;
 

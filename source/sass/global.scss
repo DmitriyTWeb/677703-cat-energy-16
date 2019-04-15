@@ -6,14 +6,16 @@ body {
   min-width: 320px;
   margin: 0;
   padding: 0;
-  @include oswald-regular();
-  font-size:  14px;
+
+  font-family: $base-font, $second-font, sans-serif;
+  font-size: 14px;
   line-height: 18px;
   font-weight: 400;
-  color: $almost-black;
-  text-transform: none;
 
+  color: $almost-black;
   background: #ffffff;
+
+  text-transform: none;
 }
 
 *,
@@ -27,7 +29,9 @@ img {
   height: auto;
 }
 
-a { text-decoration: none }
+a {
+  text-decoration: none;
+}
 
 .visually-hidden {
   position: absolute;
@@ -36,10 +40,9 @@ a { text-decoration: none }
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
-
-  clip: rect(0, 0, 0, 0);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
@@ -48,11 +51,14 @@ a { text-decoration: none }
   padding-top: 12px;
   padding-bottom: 12px;
 
-  @include oswald-regular();
-  font-size:  16px;
-  line-height: 20px;
+  font-family: $base-font, $second-font, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
 
   color: $white;
   background-color: #68b738;
   text-transform: uppercase;
+
+  border: none;
 }

@@ -1,16 +1,13 @@
-.goods-category {
+// .goods-category {
 
-}
+// }
 
-.goods-category__wrapper {
+// .goods-category__wrapper {
 
-}
+// }
 
 .goods-category__list {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
+  @include list-reset();
 }
 
 .goods-category__item {
@@ -21,23 +18,84 @@
   padding-bottom: 20px;
 
   background-color: $white-grey-bg;
-
 }
 
 .goods-category__title {
+  position: relative;
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
   padding-left: 70px;
 
-  @include oswald-regular();
   font-size: 24px;
   line-height: 37px;
-  font-weight: normal;
+  font-weight: 400;
 
 
   color: #111111;
   text-transform: uppercase;
+}
+
+.goods-category__title--slim {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+  }
+
+  &::before {
+    top: -8px;
+    left: 9px;
+    width: 35px;
+    height: 49px;
+
+    z-index: 2;
+
+    background-image: url("../img/icon-cat-slim.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    top: -4px;
+    left: 0;
+
+    width: 50px;
+    height: 50px;
+    background-color: $light-green;
+    border-radius: 50%;
+  }
+}
+
+.goods-category__title--pro {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+  }
+
+  &::before {
+    top: 5px;
+    left: -10px;
+    width: 67px;
+    height: 28px;
+
+    z-index: 2;
+
+    background-image: url("../img/icon-cat-pro.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    top: -4px;
+    left: 0;
+
+    width: 50px;
+    height: 50px;
+    background-color: $light-green;
+    border-radius: 50%;
+  }
 }
 
 .goods-category__description {
@@ -47,7 +105,7 @@
   margin-bottom: 20px;
   padding-bottom: 25px;
 
-  @include arial();
+  font-family: $second-font, sans-serif;
   font-size: 14px;
   line-height: 18px;
 
@@ -57,12 +115,25 @@
 }
 
 .goods-category__button {
-
-  @include oswald-regular();
+  display: flex;
+  align-items: center;
+  position: relative;
   font-size: 16px;
   line-height: 16px;
 
   color: $almost-black;
 
   text-transform: uppercase;
+
+  &::after {
+    content: "";
+    margin-left: 12px;
+
+    width: 24px;
+    height: 11px;
+
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
 }

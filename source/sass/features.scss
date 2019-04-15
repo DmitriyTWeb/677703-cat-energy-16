@@ -1,17 +1,17 @@
-.features {
+// .features {
 
-}
+// }
 
-.features__wrapper {
+// .features__wrapper {
 
-}
+// }
 
 .features__title {
   margin-bottom: 26px;
 
   font-size: 36px;
   line-height: 60px;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .features__list {
@@ -20,36 +20,104 @@
 
   margin-bottom: 45px;
 
-  list-style: none;
-
+  @include list-reset();
 }
 
-.features__item {
+// .features__item {
 
-}
+// }
 
-.features__item--useful {
+// .features__item--useful {
 
-}
+// }
 
-.features__item--powder {
+// .features__item--powder {
 
-}
+// }
 
-.features__item--hight-calorie {
+// .features__item--hight-calorie {
 
-}
+// }
 
-.features__item--fast-result {
+// .features__item--fast-result {
 
-}
+// }
 
 .features__description {
+  position: relative;
   margin: 0;
   padding: 0;
 
   margin-bottom: 28px;
   padding-left: 80px;
 
-  @include arial();
+  font-family: $second-font, sans-serif;
+}
+
+.features__description--useful::before {
+  content: "";
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 60px;
+  height: 60px;
+
+  background-color: $light-green;
+
+  background-image: url("../img/advantage-leaf@1x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.features__description--powder::before {
+  content: "";
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 60px;
+  height: 60px;
+
+  background-color: $light-green;
+
+  background-image: url("../img/advantage-powder@1x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.features__description--hight-calorie::before {
+  content: "";
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 60px;
+  height: 60px;
+
+  background-color: $light-green;
+
+  background-image: url("../img/advantage-dining@1x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.features__description--fast-result::before {
+  content: "";
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 60px;
+  height: 60px;
+
+  background-color: $light-green;
+
+  background-image: url("../img/advantage-clock@1x.png");
+  background-position: center;
+  background-repeat: no-repeat;
 }

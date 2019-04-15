@@ -21,7 +21,7 @@
 
   margin-bottom: 25px;
 
-  @include arial();
+  font-family: $second-font, sans-serif;
   font-size: 14px;
   line-height: 18px;
 
@@ -32,39 +32,54 @@
   display: flex;
   justify-content: space-between;
 
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 }
 
-.example__fieldset {
-  display: flex;
-  width: 125px;
+.example__parameter-wrapper {
+  position: relative;
+  width: 124px;
 
   padding-top: 17px;
   padding-bottom: 17px;
 
-  @include arial();
-  font-size: 12px;
-  line-height: 12px;
-
-  align: bottom;
-
   color: $grey;
 
-  border-color: $separator-grey;
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
 }
 
 .example__legend {
-  width: 60px;
+  display: block;
+  position: absolute;
+  width: 87px;
+
+  top: 100%;
+  left: 50%;
+
+  padding-left: 16px;
+  padding-right: 16px;
+
+  font-family: $second-font, sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+
+
+  transform: translate(-50%, -35%);
+
   text-align: center;
+
+  background-color: $white-grey-bg;
 }
 
 .example__parameter {
+  display: block;
   margin: 0;
   padding: 0;
 
-  @include oswald-regular;
+  font-family: $base-font, $second-font, sans-serif;
   font-size: 24px;
   line-height: 24px;
+  font-weight: 400;
 
   color: $almost-black;
 
@@ -73,41 +88,12 @@
 }
 
 .example__expenses {
-  margin-bottom: 40px;
+  margin: 0;
+  margin-bottom: 46px;
 
   font-size: 14px;
   line-height: 20px;
 
   text-transform: uppercase;
   text-align: center;
-
-}
-
-.example__slider {
-
-}
-
-.example__image {
-  margin-bottom: 32px;
-}
-
-.example__form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  padding-bottom: 17px;
-}
-
-.example__input {
-  width: 85px;
-  margin-left: 19px;
-  margin-right: 19px;
-}
-
-.example__before-after {
-  font-size: 16px;
-  line-height: 20px;
-
-  text-transform: uppercase;
 }

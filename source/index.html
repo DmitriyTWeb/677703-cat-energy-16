@@ -11,15 +11,15 @@
 
   <body>
 
-    <header class="page-header container container--mobile-inner">
+    <header class="page-header container">
 
       <a class="page-header__logo logo" href="#">
         <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Интернет-магазин &laquo;Cat-Energy&raquot;">
       </a>
 
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
 
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
 
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
@@ -51,23 +51,28 @@
     </header>
 
     <main class="page-main">
-      <div class="container container--mobile-inner">
+
         <section class="intro">
-          <div class="intro__header">
-            <h1 class="intro__title">Функциональное питание для котов</h1>
-            <p class="intro__slogan">Занялся собой? Займись котом!</p>
-          </div>
-          <img class="intro__image" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Курица">
-          <a class="intro__button button" href="form.html">Подобрать программу</a>
+            <div class="intro__header">
+              <div class="container">
+                <h1 class="intro__title">Функциональное питание для котов</h1>
+                <p class="intro__slogan">Занялся собой? Займись котом!</p>
+              </div>
+            </div>
+            <div class="intro__container container">
+              <img class="intro__image" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Курица">
+              <a class="intro__button button" href="form.html">Подобрать программу</a>
+            </div>
         </section>
 
+      <div class="container">
         <section class="goods-category">
           <div class="goods-category__wrapper">
             <h2 class="visually-hidden">Категории товаров</h2>
 
             <ul class="goods-category__list">
-              <li class="goods-category__item goods-category__item--slim">
-                <h3 class="goods-category__title">
+              <li class="goods-category__item">
+                <h3 class="goods-category__title goods-category__title--slim">
                   Похудение
                 </h3>
                 <p class="goods-category__description">
@@ -76,8 +81,8 @@
                 <a class="goods-category__button" href="#">Каталог SLIM</a>
               </li>
 
-              <li class="goods-category__item goods-category__item--pro">
-                <h3 class="goods-category__title">
+              <li class="goods-category__item">
+                <h3 class="goods-category__title goods-category__title--pro">
                   Набор массы
                 </h3>
                 <p class="goods-category__description">
@@ -96,23 +101,23 @@
             </h2>
 
             <ul class="features__list">
-              <li class="features__item features__item--useful">
-                <p class="features__description">
+              <li class="features__item">
+                <p class="features__description features__description--useful">
                   Функциональное питание содержит только полезные питательные вещества.
                 </p>
               </li>
-              <li class="features__item features__item--powder">
-                <p class="features__description">
+              <li class="features__item">
+                <p class="features__description features__description--powder">
                   Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
                 </p>
               </li>
-              <li class="features__item features__item--hight-calorie">
-                <p class="features__description">
+              <li class="features__item">
+                <p class="features__description features__description--hight-calorie">
                   Замените один-два приема обычной еды на наше функциональное питание.
                 </p>
               </li>
-              <li class="features__item features__item--fast-result">
-                <p class="features__description">
+              <li class="features__item">
+                <p class="features__description features__description--fast-result">
                   Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
                 </p>
               </li>
@@ -121,41 +126,36 @@
         </section>
     </div>
 
-      <section class="example container container--mobile-outer">
-        <div class="container container--mobile-inner">
+      <section class="example container">
+
           <h2 class="example__title">Живой пример</h2>
           <p class="example__description">
             Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
           </p>
           <div class="example__parameters">
-            <fieldset class="example__fieldset">
+            <div class="example__parameter-wrapper">
               <b class="example__parameter">5 кг</b>
               <legend class="example__legend">снижение веса</legend>
-            </fieldset>
-            <fieldset class="example__fieldset">
+            </div>
+            <div class="example__parameter-wrapper">
               <b class="example__parameter">60 дней</b>
               <legend class="example__legend">снижение веса</legend>
-            </fieldset class="example__legend">
+            </div class="example__legend">
           </div>
           <p class="example__expenses">затраты на питание: 15 000 руб.</p>
-          <div class="example__slider">
-            <img class="example__image" src="img/before-mobile@1x.png" width="311" height="232" alt="Изображение кота до и после программы">
-            <form class="example__form">
-              <span class="example__before-after">Было</span>
-              <input class="example__input" type="range" name="before-after-range">
-              <span class="example__before-after">Стало</span>
+          <div class="example__slider slider">
+            <img class="slider__image" src="img/before-mobile@1x.png" width="311" height="232" alt="Изображение кота до и после программы">
+            <form class="slider__form">
+              <button class="slider__button">Было</button>
+              <input class="slider__input-range" type="range" name="before-after-range">
+              <button class="slider__button">Стало</button>
             </form>
           </div>
-        </div>
+
       </section>
 
-    </main>
-
-
-    <footer class="page-footer">
-
       <section class="address">
-        <div class="address__header container container--mobile-inner">
+        <div class="address__header container">
           <b class="address__cta">
             приглашаем к&nbsp;сотрудничеству дилеров!
           </b>
@@ -163,11 +163,16 @@
             ул.&nbsp;Большая Конюшенная,д.&nbsp;19/8 Санкт-Петербург
           </address>
         </div>
-        <iframe class="container container--mobile-outer" src="https://yandex.ru/map-widget/v1/-/CBFXQGSKCD" width="320" height="360" frameborder="1" allowfullscreen="true"></iframe>
+        <iframe class="iframe" src="https://yandex.ru/map-widget/v1/-/CBFXQGSKCD" width="100%" height="360" frameborder="1" allowfullscreen="true"></iframe>
 
       </section>
 
-      <div class="page-footer__wrapper container container--mobile-inner">
+    </main>
+
+
+    <footer class="page-footer">
+
+      <div class="page-footer__wrapper container">
 
         <a class="page-footer__logo logo" href="#">
           <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Интернет-магазин &laquo;Cat-Energy&raquot;">

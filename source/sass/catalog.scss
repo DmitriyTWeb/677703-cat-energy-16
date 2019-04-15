@@ -1,12 +1,13 @@
-.catalog {
+// .catalog {
 
-}
+// }
 
 .catalog__list {
   @include list-reset();
 }
 
 .catalog__item {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding-top: 22px;
@@ -15,46 +16,12 @@
   border-bottom: 1px solid $separator-light;
 }
 
-.catalog__item--chicken-500 {
-  background-image: url("../img/chicken-small-mobile@1x.jpg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-
-.catalog__item--chicken-1000 {
-  background-image: url("../img/chicken-big-mobile@1x.jpg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-
-.catalog__item--fish-500 {
-  background-image: url("../img/fish-small-mobile@1x.jpg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-
-.catalog__item--fish-1000 {
-  background-image: url("../img/fish-big-mobile@1x.jpg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-
-.catalog__item--buckwheat-500 {
-  background-image: url("../img/buckwheat-small-mobile@1x.jpg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-
-.catalog__item--buckwheat-1000 {
-  background-image: url("../img/buckwheat-big-mobile@1x.jpg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-
-.catalog__item--rice-500 {
-  background-image: url("../img/rice-small-mobile@1x.jpg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+.catalog__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 140px;
+  height: 144px;
 }
 
 .catalog__title {
@@ -64,7 +31,7 @@
   padding-bottom: 15px;
   font-size: 16px;
   line-height: 20px;
-  font-weight: normal;
+  font-weight: 400;
 
   text-transform: uppercase;
 }
@@ -85,7 +52,7 @@
 .catalog__last-small {
   padding-bottom: 20px;
 
-  @include arial();
+  font-family: $second-font, sans-serif;
   font-size: 12px;
   line-height: 16px;
 
@@ -95,6 +62,8 @@
 }
 
 .catalog__link {
+  display: block;
+  max-width: 80px;
   color: $almost-black;
 }
 
@@ -102,7 +71,7 @@
   padding-left: 140px;
   padding-bottom: 22px;
 
-  @include arial();
+  font-family: $second-font, sans-serif;
   font-size: 12px;
   line-height: 16px;
 
@@ -111,6 +80,7 @@
 
 .catalog__button {
   text-align: center;
+  z-index: 2;
 }
 
 .catalog__button-show-all {

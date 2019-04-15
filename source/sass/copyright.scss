@@ -9,12 +9,13 @@
 .copyright__link {
   margin: 0;
   padding: 0;
-  @include arial();
+
+  font-family: $second-font, sans-serif;
   font-size: 16px;
   line-height: 16px;
 
   color: $grey;
 }
 
-.copyright__logo {
-}
+// .copyright__logo {
+// }
