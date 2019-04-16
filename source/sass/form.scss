@@ -81,6 +81,8 @@
 
   color: $grey;
 
+  border: 1px solid $separator-light;
+
   text-transform: uppercase;
 }
 
@@ -110,6 +112,8 @@
 .form__title {
   display: flex;
   align-items: center;
+
+  width: 100%;
 
   margin-bottom: 30px;
 
