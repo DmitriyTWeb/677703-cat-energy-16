@@ -1,0 +1,32 @@
+.address {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 30px;
+
+  background-color: $white-grey-bg;
+}
+
+.address__header {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 24px;
+}
+
+.address__cta {
+  width: 140px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.address__address {
+  width: 140px;
+
+  font-family: $second-font, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: $grey;
+}

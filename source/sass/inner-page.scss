@@ -1,0 +1,28 @@
+// .inner-page {
+
+// }
+
+.inner-page__title {
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+
+  margin: 0;
+  padding-top: 18px;
+  padding-bottom: 30px;
+
+  border-bottom: 1px solid $separator-light;
+}
+
+.inner-page__title-noborder {
+  border: none;
+}
+
+.inner-page__description {
+  margin: 0;
+  padding: 0;
+
+  margin-bottom: 38px;
+
+  text-transform: uppercase;
+}
