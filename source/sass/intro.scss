@@ -1,6 +1,4 @@
 .intro {
-  display: flex;
-  flex-direction: column;
   margin-bottom: 22px;
 
   color: $white;
@@ -47,6 +45,11 @@
   text-transform: uppercase;
 }
 
+.intro__footer {
+  display: flex;
+  flex-direction: column;
+}
+
 .intro__image {
   margin-top: -140px;
   align-self: center;
@@ -66,14 +69,13 @@
   }
 
   .intro__header {
-    justify-content: flex-start;
     background: none;
     height: auto;
   }
 
   .intro__title {
     margin-bottom: 45px;
-    max-width: 427px;
+    max-width: 490px;
 
     font-size: 60px;
     line-height: 60px;
@@ -102,3 +104,13 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .intro {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .intro__header {
+
+  }
+}

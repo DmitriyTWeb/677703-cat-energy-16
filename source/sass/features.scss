@@ -2,10 +2,6 @@
   margin-bottom: 42px;
 }
 
-// .features__wrapper {
-
-// }
-
 .features__title {
   margin-bottom: 26px;
 
@@ -24,106 +20,163 @@
 }
 
 .features__item {
+  position: relative;
   margin-bottom: 20px;
-
   min-height: 60px;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: $light-green;
+
+    //background-image: url("../img/advantage-leaf@1x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
-.features__item:last-child {
-  margin-bottom: 0;
+.features__item--useful {
+  &::before {
+    background-image: url("../img/advantage-leaf@1x.png");
+  }
 }
 
-// .features__item--useful {
+.features__item--powder {
+  &::before {
+    background-image: url("../img/advantage-powder@1x.png");
+  }
+}
 
-// }
+.features__item--hight-calorie {
+  &::before {
+    background-image: url("../img/advantage-dining@1x.png");
+  }
+}
 
-// .features__item--powder {
-
-// }
-
-// .features__item--hight-calorie {
-
-// }
-
-// .features__item--fast-result {
-
-// }
+.features__item--fast-result {
+  &::before {
+    background-image: url("../img/advantage-clock@1x.png");
+  }
+}
 
 .features__description {
   position: relative;
+  z-index: 2;
   margin: 0;
   padding: 0;
 
-  //margin-bottom: 28px;
   padding-left: 80px;
 
   font-family: $second-font, sans-serif;
 }
 
-.features__description--useful::before {
-  content: "";
-  position: absolute;
+@media (min-width: $tablet-width) {
+  .features {
+    margin-bottom: 50px;
 
-  top: 0;
-  left: 0;
+    &::after {
+      display:  block;
+      content:"";
+      width: 100%;
+      border-bottom: 1px solid $separator-light;
+    }
+  }
 
-  width: 60px;
-  height: 60px;
+  .features__list-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -140px;
+  }
 
-  background-color: $light-green;
+  .features__item {
+    width: 245px;
+    min-height: 230px;
+    outline: 2px dotted black;
+    margin-bottom: 90px;
+    margin-left: 140px;
 
-  background-image: url("../img/advantage-leaf@1x.png");
-  background-position: center;
-  background-repeat: no-repeat;
+    &::before {
+      top:-0;
+      right: 0;
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      content: "0";
+      padding: 0;
+      margin: 0;
+      position: absolute;
+
+      top: -28px;
+      right: 0;
+
+      font-size: 281px;
+      line-height: 281px;
+      color: $white-grey-bg;
+    }
+  }
+
+  .features__item--useful {
+    &::after {
+      content: "1";
+      right: 5px;
+    }
+  }
+
+.features__item--powder {
+    &::after {
+      content: "2";
+      right: 5px;
+    }
+  }
+
+.features__item--hight-calorie {
+    &::after {
+      content: "3";
+      right: 5px;
+    }
+  }
+
+.features__item--fast-result {
+    &::after {
+      content: "4";
+      right: 0;
+    }
+  }
+
+  .features__description {
+    padding-top: 117px;
+    padding-left: 0;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
-.features__description--powder::before {
-  content: "";
-  position: absolute;
 
-  top: 0;
-  left: 0;
+@media (min-width: $desktop-width) {
+  .features {
+    margin-bottom: 90px;
 
-  width: 60px;
-  height: 60px;
+    &::after {
+      width: 0;
+      border: none;
+    }
+  }
 
-  background-color: $light-green;
+  .features__list-wrapper {
+    margin-left: -80px;
+  }
 
-  background-image: url("../img/advantage-powder@1x.png");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.features__description--hight-calorie::before {
-  content: "";
-  position: absolute;
-
-  top: 0;
-  left: 0;
-
-  width: 60px;
-  height: 60px;
-
-  background-color: $light-green;
-
-  background-image: url("../img/advantage-dining@1x.png");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.features__description--fast-result::before {
-  content: "";
-  position: absolute;
-
-  top: 0;
-  left: 0;
-
-  width: 60px;
-  height: 60px;
-
-  background-color: $light-green;
-
-  background-image: url("../img/advantage-clock@1x.png");
-  background-position: center;
-  background-repeat: no-repeat;
+  .features__item {
+    margin-left: 80px;
+  }
 }

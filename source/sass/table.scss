@@ -1,4 +1,5 @@
 .table {
+  border-collapse: collapse;
   font-family: $second-font, sans-serif;
   font-size: 12px;
   line-height: 16px;
@@ -6,14 +7,27 @@
   color: $grey;
 }
 
-.table__row {
+// .table__field {
 
-}
-
-.table__field {
-
-}
+// }
 
 .table__value {
   text-align: right;
+}
+
+@media (min-width: $tablet-width) {
+  .table {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .table__row {
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .table__field,
+  .table__value {
+    padding-top: 9px;
+    padding-bottom: 9px;
+  }
 }

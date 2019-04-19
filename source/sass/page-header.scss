@@ -27,7 +27,7 @@
    }
 
   .page-header__logo {
-    height: 58px;
+    height: 58px; // временно
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -35,6 +35,6 @@
 
 @media (min-width: $desktop-width) {
   .page-header__logo {
-    height: 59px;
+    height: 59px; // временно
   }
 }

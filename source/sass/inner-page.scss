@@ -26,3 +26,12 @@
 
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .inner-page__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 168px;
+    border: none;
+  }
+}

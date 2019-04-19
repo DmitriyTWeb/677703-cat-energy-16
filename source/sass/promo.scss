@@ -5,8 +5,8 @@
 }
 
 .promo__link {
+
   padding-bottom: 44px;
-  text-align: center;
   flex-grow: 1;
   background-color: $light-green;
 
@@ -30,19 +30,50 @@
   line-height: 20px;
 
   color: $white;
+
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: 50%;
+
+    width: 55px;
+    height: 60px;
+    transform: translateX(-50%);
+
+    background-image: url("../img/icon-gift.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
 }
 
-.promo__text::before {
-  content: "";
-  position: absolute;
-  top: 65px;
-  left: 50%;
+@media (min-width: $tablet-width) {
+  .promo__link {
+    position: relative;
+    padding-left: 424px;
+    padding-top: 73px;
+    padding-bottom: 73px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
 
-  width: 55px;
-  height: 60px;
-  transform: translateX(-50%);
+  }
 
-  background-image: url("../img/icon-gift.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  .promo__text {
+    position: static;
+    width: 170px;
+    margin: 0;
+    padding-top: 0px;
+
+    font-size: 16px;
+    line-height: 20px;
+
+    text-align: left;
+
+    &::before {
+      top: 50%;
+      left: 91px;
+      transform: translateY(-50%);
+    }
+  }
 }
