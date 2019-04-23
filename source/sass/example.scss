@@ -1,7 +1,5 @@
 .example {
   padding-top: 20px;
-  margin-bottom: 30px;
-  background-color: $white-grey-bg;
 }
 
 .example__title {
@@ -105,10 +103,7 @@
 @media (min-width: $tablet-width) {
   .example {
     background-color: transparent;
-  }
-
-  .example__bg-footer {
-    background-color: $white-grey-bg;
+    padding-top: 0;
   }
 
   .example__title {
@@ -165,14 +160,93 @@
 
     text-align: right;
   }
+
+  .example__slider {
+    position: relative;
+    padding-bottom: 67px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      background-color: $white-grey-bg;
+      left: -350px;
+      right: -250px;
+      top: 0;
+      bottom: 0;
+    }
+  }
+
 }
 
 @media (min-width: $desktop-width) {
-  .example__flex-wrapper {
-    display: flex;
+  .example {
+    padding-top: 0;
+    margin-bottom: 0;
   }
 
-  .example__bg {
+  .example__flex-wrapper {
+    position: relative;
+    display: flex;
+
+    padding-top: 75px;
+    padding-bottom: 70px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      background-color: $white-grey-bg;
+      left: -1000px;
+      right: -1000px;
+      top: 0;
+      bottom: 0;
+    }
+  }
+
+  .example__text-block {
+    display: flex;
+    width: 440px;
+    flex-direction: column;
+  }
+
+  .example__slider {
+    padding-bottom: 0;
+     &::before {
+      display: none;
+    }
+  }
+
+  .example__description {
+    //width: 440px;
+    margin-bottom: 72px;
+  }
+
+  .example__parameters {
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+
+  .example__parameter-wrapper {
+    margin-bottom: 61px;
+  }
+
+  .example__caption {
     background-color: $white-grey-bg;
+  }
+
+  .example__expenses {
+    margin-left: 0;
+    margin-bottom: 7px;
+    width: 100%;
+    text-align: left;
+  }
+
+  .example__expenses-value {
+    margin-left: 60px;
+  }
+
+  .example__slider {
+    margin-left: 210px;
   }
 }

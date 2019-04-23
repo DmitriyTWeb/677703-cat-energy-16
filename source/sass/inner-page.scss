@@ -1,7 +1,3 @@
-// .inner-page {
-
-// }
-
 .inner-page__title {
   font-size: 36px;
   line-height: 60px;
@@ -12,10 +8,6 @@
   padding-bottom: 30px;
 
   border-bottom: 1px solid $separator-light;
-}
-
-.inner-page__title-noborder {
-  border: none;
 }
 
 .inner-page__description {
@@ -29,9 +21,19 @@
 
 @media (min-width: $tablet-width) {
   .inner-page__title {
+    padding-top: 65px;
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 168px;
+    padding-bottom: 0;
+    margin-bottom: 48px;
     border: none;
+  }
+
+  .inner-page__description {
+    margin-bottom: 68px;
+    width: 330px;
+
+    font-size: 20px;
+    line-height: 30px;
   }
 }

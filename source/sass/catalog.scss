@@ -1,7 +1,3 @@
-// .catalog {
-
-// }
-
 .catalog__list {
   @include list-reset();
 }
@@ -21,12 +17,6 @@
 .catalog__item-wrapper {
   flex-grow: 1;
   margin-bottom: 22px;
-}
-
-.catalog__image {
-  order: -1;
-  width: 140px;
-  height: 144px;
 }
 
 .catalog__title {
@@ -95,6 +85,20 @@
 
 .catalog__table {
   width: 100%;
+}
+
+
+.catalog__image-wrapper {
+  display: block;
+  order: -1;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog__image {
+  display: block;
+  width: 140px;
+  height: 144px;
 }
 
 .catalog__button {
@@ -187,9 +191,12 @@
     line-height: 16px;
   }
 
+  .catalog__image-wrapper {
+    margin-bottom: 40px;
+  }
+
   .catalog__image {
     margin-top: -46px;
-    margin-bottom: 40px;
   }
 
   .catalog__button--last {
@@ -201,5 +208,10 @@
   .catalog__item {
     width: 245px;
   }
+
+  .catalog__image {
+
+  }
+
 
 }

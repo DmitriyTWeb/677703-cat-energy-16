@@ -17,7 +17,6 @@
 
 .slider__input-range {
   margin-top: 0;
-  margin-bottom: 7px;
   width: 85px;
   margin-left: 19px;
   margin-right: 19px;
@@ -36,12 +35,14 @@
 
 @media (min-width: $tablet-width) {
   .slider__image {
+    width: 677px;
     margin-top: -170px;
     margin-bottom: 20px;
   }
 
   .slider__form {
-    margin-bottom: 68px;
+    margin-bottom: 0;
+
   }
 
   .slider__button {
@@ -59,5 +60,28 @@
     width: 430px;
     margin-left: 25px;
     margin-right: 25px;
+    margin-bottom: 7px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider {
+    display: flex;
+    flex-direction: column;
+  }
+  .slider__image {
+    width: 677px;
+  }
+
+  .slider__form {
+    margin-top: auto;
+  }
+
+  .slider__input-range {
+
+  }
+
+  .slider__button {
+
   }
 }

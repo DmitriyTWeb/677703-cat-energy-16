@@ -62,3 +62,12 @@ a {
 
   border: none;
 }
+
+@media (min-width: $tablet-width) {
+  .button {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

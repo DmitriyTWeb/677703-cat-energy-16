@@ -1,11 +1,15 @@
 .page-header {
-  display: flex;
-  flex-direction: column;
-  position: relative;
   font-family: $base-font, $second-font, sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
+  margin-bottom: 0;
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .page-header__logo {
@@ -13,12 +17,8 @@
   margin-top: 10px;
   margin-bottom: 17px;
 
-  height: 38px;
+  cursor: pointer;
 }
-
-// .page-header__logo-image {
-
-// }
 
 @media (min-width: $tablet-width) {
   .page-header {
@@ -26,15 +26,25 @@
     margin-top: 24px;
    }
 
+  .page-header__wrapper {
+    flex-direction: row;
+  }
+
   .page-header__logo {
-    height: 58px; // временно
     margin-top: 0;
     margin-bottom: 0;
+  }
+
+  .page-header__logo-image {
+    width: 173px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-header__logo {
-    height: 59px; // временно
+  .page-header {
+    margin-bottom: 30px;
+  }
+  .page-header__logo-image {
+    width: 202px;
   }
 }

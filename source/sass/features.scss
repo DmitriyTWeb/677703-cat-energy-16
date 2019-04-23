@@ -89,6 +89,14 @@
     }
   }
 
+  .features__title {
+    margin-top: 0;
+    margin-bottom: 75px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
   .features__list-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -164,8 +172,7 @@
 
 @media (min-width: $desktop-width) {
   .features {
-    margin-bottom: 90px;
-
+    margin-bottom: 0;
     &::after {
       width: 0;
       border: none;

@@ -108,6 +108,8 @@
     flex-direction: row;
     margin-left: auto;
     align-items: center;
+
+    margin-top: 5px;
   }
 
   .main-nav__wrapper {
@@ -140,5 +142,23 @@
   .main-nav__toggle::before,
   .main-nav__toggle::after {
     display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__link {
+    color: $white;
+  }
+
+  .inner-page .main-nav__link {
+    color: $almost-black;
+  }
+
+  .main-nav__item--active {
+    border-color: $white;
+  }
+
+  .inner-page .main-nav__item--active {
+    border-bottom: 2px solid $light-green;
   }
 }
