@@ -136,6 +136,16 @@
     background-position: 0 0;
     background-repeat: no-repeat;
   }
+
+  &:hover::after,
+  &:focus::after {
+    width: 33px;
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

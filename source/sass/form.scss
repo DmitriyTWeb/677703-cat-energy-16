@@ -89,6 +89,23 @@
   border: 1px solid $separator-light;
 
   text-transform: uppercase;
+
+  &:hover {
+    outline: none;
+    border-color: #cdcdcd;
+  }
+
+  &:focus,
+  &:active {
+    outline: none;
+    border-width: 2px;
+    border-color: $grey;
+  }
+
+  &:invalid {
+    border-width: 2px;
+    border-color: #ff8282;
+  }
 }
 
 .form__input--contacts,

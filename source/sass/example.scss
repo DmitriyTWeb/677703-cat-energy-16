@@ -70,7 +70,7 @@
 
   text-align: center;
 
-  background-color: $white-grey-bg;
+  background-color: $white;
 }
 
 .example__parameter {
@@ -164,6 +164,7 @@
   .example__slider {
     position: relative;
     padding-bottom: 67px;
+    margin-top: -170px;
 
     &::before {
       content: "";
@@ -213,6 +214,7 @@
 
   .example__slider {
     width: 690px;
+    margin-top: -265px;
     padding-bottom: 0;
      &::before {
       display: none;
@@ -220,7 +222,6 @@
   }
 
   .example__description {
-    //width: 435px;
     margin-bottom: 72px;
   }
 
