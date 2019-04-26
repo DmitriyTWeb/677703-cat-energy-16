@@ -205,8 +205,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog__list-wrapper {
+    margin-left: -80px;
+  }
   .catalog__item {
     width: 245px;
+    margin-left: 80px;
   }
 
   .catalog__image {
