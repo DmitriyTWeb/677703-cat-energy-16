@@ -224,7 +224,7 @@
   .form__label {
     font-size: 20px;
     line-height: 20px;
-    margin-right: 0;
+    //margin-right: 0;
     text-transform: uppercase;
   }
 
@@ -337,6 +337,7 @@
 
   .form__label--options {
     margin-left: 80px;
+    margin-right: 0;
   }
 
   .form__textarea {

@@ -188,6 +188,7 @@
   .example__flex-wrapper {
     position: relative;
     display: flex;
+    justify-content: space-between;
 
     padding-top: 75px;
     padding-bottom: 70px;
@@ -206,11 +207,12 @@
 
   .example__text-block {
     display: flex;
-    width: 440px;
+    flex-basis: 435px;
     flex-direction: column;
   }
 
   .example__slider {
+    width: 690px;
     padding-bottom: 0;
      &::before {
       display: none;
@@ -218,7 +220,7 @@
   }
 
   .example__description {
-    //width: 440px;
+    //width: 435px;
     margin-bottom: 72px;
   }
 
@@ -244,9 +246,5 @@
 
   .example__expenses-value {
     margin-left: 60px;
-  }
-
-  .example__slider {
-    margin-left: 210px;
   }
 }
