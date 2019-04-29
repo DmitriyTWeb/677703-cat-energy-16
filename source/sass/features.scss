@@ -40,29 +40,29 @@
     background-position: center;
     background-repeat: no-repeat;
   }
-}
 
-.features__item--useful {
-  &::before {
-    background-image: url("../img/advantage-leaf@1x.png");
+  &--useful {
+    &::before {
+      background-image: url("../img/advantage-leaf@1x.png");
+    }
   }
-}
 
-.features__item--powder {
-  &::before {
-    background-image: url("../img/advantage-powder@1x.png");
+  &--powder {
+    &::before {
+      background-image: url("../img/advantage-powder@1x.png");
+    }
   }
-}
 
-.features__item--hight-calorie {
-  &::before {
-    background-image: url("../img/advantage-dining@1x.png");
+  &--hight-calorie {
+    &::before {
+      background-image: url("../img/advantage-dining@1x.png");
+    }
   }
-}
 
-.features__item--fast-result {
-  &::before {
-    background-image: url("../img/advantage-clock@1x.png");
+  &--fast-result {
+    &::before {
+      background-image: url("../img/advantage-clock@1x.png");
+    }
   }
 }
 
@@ -82,8 +82,8 @@
     margin-bottom: 50px;
 
     &::after {
-      display:  block;
-      content:"";
+      display: block;
+      content: "";
       width: 100%;
       border-bottom: 1px solid $separator-light;
     }
@@ -111,7 +111,7 @@
     margin-left: 140px;
 
     &::before {
-      top:-0;
+      top: 0;
       right: 0;
       width: 80px;
       height: 80px;
@@ -123,40 +123,40 @@
       margin: 0;
       position: absolute;
 
-      top: -38px;
+      top: -28px;
       right: 0;
 
       font-size: 281px;
       line-height: 281px;
       color: $white-grey-bg;
     }
-  }
 
-  .features__item--useful {
-    &::after {
-      content: "1";
-      right: 5px;
+    &--useful {
+      &::after {
+        content: "1";
+        right: 5px;
+      }
     }
-  }
 
-.features__item--powder {
-    &::after {
-      content: "2";
-      right: 5px;
+    &--powder {
+      &::after {
+        content: "2";
+        right: 5px;
+      }
     }
-  }
 
-.features__item--hight-calorie {
-    &::after {
-      content: "3";
-      right: 5px;
+    &--hight-calorie {
+      &::after {
+        content: "3";
+        right: 5px;
+      }
     }
-  }
 
-.features__item--fast-result {
-    &::after {
-      content: "4";
-      right: 0;
+    &--fast-result {
+      &::after {
+        content: "4";
+        right: 0;
+      }
     }
   }
 
@@ -173,6 +173,7 @@
 @media (min-width: $desktop-width) {
   .features {
     margin-bottom: 0;
+
     &::after {
       width: 0;
       border: none;

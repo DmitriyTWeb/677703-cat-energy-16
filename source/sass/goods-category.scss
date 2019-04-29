@@ -1,11 +1,3 @@
-// .goods-category {
-
-// }
-
-// .goods-category__wrapper {
-
-// }
-
 .goods-category__list {
   @include list-reset();
 }
@@ -150,14 +142,12 @@
 
 @media (min-width: $tablet-width) {
   .goods-category {
-    margin-bottom: 23px;
     margin-bottom: 0;
   }
 
   .goods-category__list {
     display: flex;
     flex-direction: column;
-
   }
 
   .goods-category__item {
@@ -167,6 +157,7 @@
     padding-bottom: 63px;
     margin-bottom: 30px;
   }
+
   .goods-category__title {
     font-size: 36px;
     line-height: 37px;
@@ -293,6 +284,4 @@
     margin-right: 0;
     margin-bottom: 34px;
   }
-
-
 }

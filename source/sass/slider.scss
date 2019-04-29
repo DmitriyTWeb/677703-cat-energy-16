@@ -21,7 +21,6 @@
   margin-left: 19px;
   margin-right: 19px;
 
-  -webkit-appearance: none;
   background: transparent;
 
   cursor: pointer;
@@ -32,7 +31,6 @@
 .slider__input-range::-webkit-slider-thumb {
   -webkit-apearance: none;
   background: transparent;
-
 }
 
 .slider__button {
@@ -49,12 +47,12 @@
 @media (min-width: $tablet-width) {
   .slider__image {
     width: 677px;
+    margin-top: -170px;
     margin-bottom: 20px;
   }
 
   .slider__form {
     margin-bottom: 0;
-
   }
 
   .slider__button {
@@ -83,11 +81,13 @@
       outline: none;
       border-bottom-style: solid;
     }
+
     &:hover,
     &:focus,
     &:active {
       outline: none;
     }
+
     &:active::after {
       border: none;
     }
@@ -106,19 +106,13 @@
     display: flex;
     flex-direction: column;
   }
+
   .slider__image {
+    margin-top: -265px;
     width: 677px;
   }
 
   .slider__form {
     margin-top: auto;
-  }
-
-  .slider__input-range {
-
-  }
-
-  .slider__button {
-
   }
 }

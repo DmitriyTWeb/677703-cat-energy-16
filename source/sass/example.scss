@@ -28,9 +28,16 @@
 
 .example__parameters {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 
   margin-bottom: 46px;
+}
+
+.example__parameters-flex {
+  display: flex;
+  width: 280px;
+  align-self: center;
+  justify-content: space-between;
 }
 
 .example__parameter-wrapper {
@@ -44,10 +51,6 @@
 
   border: 1px solid #cdcdcd;
   border-radius: 4px;
-}
-
-.example__parameter-wrapper:nth-child(2) {
-  margin-left: auto;
 }
 
 .example__caption {
@@ -121,16 +124,19 @@
   }
 
   .example__parameters {
+    flex-direction: row;
     margin-bottom: 255px;
   }
+
+  .example__parameters-flex {
+    width: 366px;
+    align-self: flex-start;
+  }
+
   .example__parameter-wrapper {
     width: 162px;
     padding-top: 21px;
     padding-bottom: 21px;
-  }
-
-  .example__parameter-wrapper:nth-child(2) {
-    margin-left: 42px;
   }
 
   .example__parameter {
@@ -164,7 +170,6 @@
   .example__slider {
     position: relative;
     padding-bottom: 67px;
-    margin-top: -170px;
 
     &::before {
       content: "";
@@ -177,7 +182,6 @@
       bottom: 0;
     }
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -214,9 +218,9 @@
 
   .example__slider {
     width: 690px;
-    margin-top: -265px;
     padding-bottom: 0;
-     &::before {
+
+    &::before {
       display: none;
     }
   }
