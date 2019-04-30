@@ -46,6 +46,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .social__list {
+    width: 124px;
+    // padding-left: 10px;
+  }
+
   .social__link--vkontakte {
     width: 30px;
     height: 16px;

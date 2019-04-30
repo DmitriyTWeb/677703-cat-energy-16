@@ -80,7 +80,7 @@
 
 @media (min-width: $tablet-width) {
   .features {
-    margin-bottom: 50px;
+    margin-bottom: 44px;
 
     &::after {
       display: block;
@@ -92,7 +92,7 @@
 
   .features__title {
     margin-top: 0;
-    margin-bottom: 75px;
+    margin-bottom: 40px;
 
     font-size: 60px;
     line-height: 60px;
@@ -107,8 +107,8 @@
   .features__item {
     width: 245px;
     min-height: 230px;
-    outline: 2px dotted black;
-    margin-bottom: 90px;
+    margin-top: 32px;
+    margin-bottom: 55px;
     margin-left: 140px;
 
     &::before {
@@ -124,7 +124,7 @@
       margin: 0;
       position: absolute;
 
-      top: -28px;
+      top: -40px;
       right: 0;
 
       font-size: 281px;
@@ -135,34 +135,34 @@
     &--useful {
       &::after {
         content: "1";
-        right: 5px;
+        right: 15px;
       }
     }
 
     &--powder {
       &::after {
         content: "2";
-        right: 5px;
+        right: 0;
       }
     }
 
     &--hight-calorie {
       &::after {
         content: "3";
-        right: 5px;
+        right: -2px;
       }
     }
 
     &--fast-result {
       &::after {
         content: "4";
-        right: 0;
+        right: -2px;
       }
     }
   }
 
   .features__description {
-    padding-top: 117px;
+    padding-top: 112px;
     padding-left: 0;
 
     font-size: 16px;

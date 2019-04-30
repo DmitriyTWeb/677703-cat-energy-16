@@ -11,17 +11,18 @@
 
 .slider__range {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 37px;
+  width: 196px;
 }
 
 .slider__input-range {
   margin-top: 0;
   width: 84px;
   height: auto;
-  margin-left: 16px;
-  margin-right: 16px;
+  // margin-left: 18px;
+  // margin-right: 16px;
   margin-bottom: 0;
   background: transparent;
 
@@ -51,14 +52,18 @@
 @media (min-width: $tablet-width) {
   .slider__image {
     width: 677px;
-    margin-top: -170px;
-    margin-bottom: 20px;
+    margin-top: -160px;
+    margin-bottom: 17px;
   }
 
   .slider__range {
+    width: 570px;
     margin-bottom: 0;
   }
 
+  .slider__input-range {
+    width: 428px;
+  }
   .slider__button {
     position: relative;
     font-size: 20px;

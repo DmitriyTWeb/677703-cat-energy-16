@@ -34,12 +34,12 @@
 }
 
 .intro__header {
-  padding-top: 30px;
+  padding-top: 27px;
 }
 
 .intro__title {
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 25px;
   padding: 0;
   font-size: 36px;
   line-height: 36px;
@@ -76,12 +76,13 @@
   font-size: 14px;
   line-height: 18px;
   padding-top: 10px;
-  padding-bottom: 11px;
+  padding-bottom: 12px;
   text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .intro {
+    margin-bottom: 0;
     color: $almost-black;
   }
 
@@ -96,8 +97,9 @@
   }
 
   .intro__title {
-    margin-left: 90px;
-    margin-bottom: 45px;
+    margin-left: 87px;
+    margin-top: 31px;
+    margin-bottom: 42px;
     max-width: 490px;
 
     font-size: 60px;
@@ -106,8 +108,8 @@
   }
 
   .intro__slogan {
-    margin-left: 90px;
-    margin-bottom: 50px;
+    margin-left: 88px;
+    margin-bottom: 47px;
     font-size: 20px;
     line-height: 20px;
 
@@ -128,11 +130,13 @@
   }
 
   .intro__button {
-    margin-left: 90px;
+    margin-left: 89px;
     z-index: 2;
     align-self: flex-start;
+    padding-top: 15px;
+    padding-bottom: 17px;
     padding-left: 26px;
-    padding-right: 29px;
+    padding-right: 28px;
 
     font-size: 20px;
     line-height: 20px;

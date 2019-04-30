@@ -42,8 +42,8 @@
   .address__header {
     position: relative;
 
-    padding-top: 67px;
-    padding-bottom: 63px;
+    padding-top: 63px;
+    padding-bottom: 32px;
     padding-left: 42px;
     padding-right: 42px;
   }
@@ -76,10 +76,11 @@
     width: 150px;
     font-size: 16px;
     line-height: 20px;
+    text-align: right;
   }
 
   .address__city {
-    margin-top: auto;
+    margin-top: 20px;
   }
 
   .address__iframe {
