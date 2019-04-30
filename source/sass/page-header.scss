@@ -4,6 +4,8 @@
   font-size: 20px;
   line-height: 20px;
   margin-bottom: 0;
+
+  border-bottom: 1px solid $separator-light;
 }
 
 .page-header__wrapper {
@@ -14,8 +16,8 @@
 
 .page-header__logo {
   display: block;
-  margin-top: 10px;
-  margin-bottom: 17px;
+  margin-top: 13px;
+  margin-bottom: 13px;
 
   cursor: pointer;
 
@@ -33,6 +35,8 @@
   .page-header {
     flex-direction: row;
     margin-top: 24px;
+
+    border-bottom: none;
   }
 
   .page-header__wrapper {

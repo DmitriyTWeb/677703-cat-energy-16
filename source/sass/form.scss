@@ -14,7 +14,18 @@
   margin-bottom: 27px;
 
   border: none;
-  border-bottom: 1px solid $separator-light;
+
+  &--personal-data,
+  &--program-type {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100vw;
+      margin-left: -20px;
+      border-bottom: 1px solid $separator-light;
+    }
+  }
 
   &--contacts,
   &--comments,
@@ -125,6 +136,9 @@
     position: relative;
     margin-bottom: 25px;
     padding-left: 60px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    vertical-align: middle;
 
     &:first-child {
       margin-top: 27px;
@@ -137,9 +151,9 @@
       width: 30px;
       height: 30px;
 
-      top: 0;
+      top: 50%;
       left: 0;
-      transform: translateY(-15%);
+      transform: translateY(-50%);
 
       border-radius: 50%;
       border: 1px solid #cdcdcd;
@@ -149,6 +163,8 @@
   &--options {
     padding-left: 60px;
     margin-bottom: 30px;
+    padding-top: 3px;
+    padding-bottom: 3px;
     position: relative;
 
     &::before {
@@ -158,9 +174,9 @@
       width: 30px;
       height: 30px;
 
-      top: 0;
+      top: 50%;
       left: 0;
-      transform: translateY(-15%);
+      transform: translateY(-50%);
 
       border: 1px solid #cdcdcd;
     }
@@ -182,9 +198,11 @@
     width: 15px;
     height: 10px;
 
-    top: calc(#{50%} - 7px);
+    top: 8px;
     left: 8px;
 
+    //transform: translateY(-50%);
+    transform-origin: 50% 50%;
     transform: rotate(-45deg);
 
     border: 3px solid $light-green;
@@ -208,7 +226,7 @@
     top: 50%;
     left: 9px;
 
-    transform: translateY(-45%);
+    transform: translateY(-50%);
 
     border-radius: 50%;
     background-color: $light-green;
@@ -306,6 +324,14 @@
     margin-bottom: 27px;
     border: none;
 
+    &--personal-data,
+    &--program-type {
+
+      &::after {
+        width: 0;
+      }
+    }
+
     &--personal-data {
       margin-bottom: 70px;
     }
@@ -371,6 +397,8 @@
 
     &--program {
       margin-bottom: 35px;
+      padding-top: 5px;
+      padding-bottom: 5px;
 
       &:last-child {
         margin-bottom: 0;
@@ -379,18 +407,18 @@
       &::before {
         width: 40px;
         height: 40px;
-
-        transform: translateY(-17%);
       }
     }
 
     &--options {
       margin-right: 0;
+      padding-top: 5px;
+      padding-bottom: 5px;
 
       &::before {
         width: 40px;
         height: 40px;
-        transform: translateY(-15%);
+        transform: translateY(-50%);
       }
     }
   }
@@ -428,8 +456,6 @@
       height: 18px;
 
       left: 11px;
-
-      transform: translateY(-50%);
     }
   }
 

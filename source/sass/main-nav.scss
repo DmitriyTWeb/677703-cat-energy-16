@@ -10,8 +10,8 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 21px;
-  right: 20px;
+  top: 23px;
+  right: 0;
   z-index: 2;
 
   width: 24px;
@@ -47,8 +47,8 @@
   content: "";
 
   position: absolute;
-  top: 23px;
-  right: 23px;
+  top: 26px;
+  right: 0;
 
   width: 18px;
   height: 18px;
@@ -91,17 +91,12 @@
 
 .main-nav__item {
   border-top: 1px solid $separator-light;
-  border-bottom: 1px solid $separator-light;
 }
-
-// .main-nav__item--active {
-
-// }
 
 .main-nav__link {
   display: block;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 23px;
+  padding-bottom: 21px;
   text-align: center;
   color: $almost-black;
 

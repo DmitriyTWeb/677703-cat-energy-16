@@ -4,10 +4,10 @@
 
 .goods-category__item {
   margin-bottom: 20px;
-  padding-top: 33px;
+  padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 21px;
 
   background-color: $white-grey-bg;
 }
@@ -15,9 +15,9 @@
 .goods-category__title {
   position: relative;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   padding: 0;
-  padding-left: 70px;
+  padding-left: 71px;
 
   font-size: 24px;
   line-height: 37px;
@@ -37,7 +37,7 @@
 
   &::before {
     top: -8px;
-    left: 9px;
+    left: 10px;
     width: 35px;
     height: 49px;
 
@@ -49,8 +49,8 @@
   }
 
   &::after {
-    top: -4px;
-    left: 0;
+    top: -6px;
+    left: 2px;
 
     width: 50px;
     height: 50px;
@@ -68,7 +68,7 @@
 
   &::before {
     top: 5px;
-    left: -10px;
+    left: -7px;
     width: 67px;
     height: 28px;
 
@@ -80,8 +80,8 @@
   }
 
   &::after {
-    top: -4px;
-    left: 0;
+    top: -6px;
+    left: 2px;
 
     width: 50px;
     height: 50px;
@@ -95,7 +95,7 @@
   padding: 0;
 
   margin-bottom: 20px;
-  padding-bottom: 25px;
+  padding-bottom: 22px;
 
   font-family: $second-font, sans-serif;
   font-size: 14px;

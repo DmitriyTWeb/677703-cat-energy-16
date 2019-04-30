@@ -5,10 +5,11 @@
 }
 
 .slider__image {
+  display: block;
   margin-bottom: 32px;
 }
 
-.slider__form {
+.slider__range {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,10 +18,11 @@
 
 .slider__input-range {
   margin-top: 0;
-  width: 85px;
-  margin-left: 19px;
-  margin-right: 19px;
-
+  width: 84px;
+  height: auto;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 0;
   background: transparent;
 
   cursor: pointer;
@@ -29,12 +31,14 @@
 }
 
 .slider__input-range::-webkit-slider-thumb {
-  -webkit-apearance: none;
   background: transparent;
 }
 
 .slider__button {
   font-family: $base-font, $second-font, sans-serif;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
   font-size: 16px;
   line-height: 20px;
 
@@ -51,7 +55,7 @@
     margin-bottom: 20px;
   }
 
-  .slider__form {
+  .slider__range {
     margin-bottom: 0;
   }
 
@@ -112,7 +116,7 @@
     width: 677px;
   }
 
-  .slider__form {
+  .slider__range {
     margin-top: auto;
   }
 }

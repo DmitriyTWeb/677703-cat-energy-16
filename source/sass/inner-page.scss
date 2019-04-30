@@ -19,6 +19,10 @@
   text-transform: uppercase;
 }
 
+.inner-page .page-main {
+  overflow: hidden;
+}
+
 @media (min-width: $tablet-width) {
   .inner-page__title {
     padding-top: 65px;

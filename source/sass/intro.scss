@@ -39,7 +39,7 @@
 
 .intro__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
   padding: 0;
   font-size: 36px;
   line-height: 36px;
@@ -50,7 +50,7 @@
 
 .intro__slogan {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   padding: 0;
   font-size: 14px;
   line-height: 14px;
@@ -62,14 +62,21 @@
 
 .intro__image-wrapper {
   margin: 0;
+  margin-bottom: 0;
   padding: 0;
   align-self: center;
+}
+
+.intro_image {
+  display: block;
 }
 
 .intro__button {
   display: block;
   font-size: 14px;
   line-height: 18px;
+  padding-top: 10px;
+  padding-bottom: 11px;
   text-align: center;
 }
 
