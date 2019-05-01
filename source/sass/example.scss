@@ -214,8 +214,10 @@
       position: absolute;
       z-index: -1;
       background-color: $white-grey-bg;
-      left: -1000px;
-      right: -1000px;
+      left: 0;
+      right: 0;
+      left: calc(#{-50vw} + #{50%});
+      right: calc(#{-50vw} + #{50%});
       top: 0;
       bottom: 0;
     }
