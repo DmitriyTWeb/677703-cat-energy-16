@@ -1,14 +1,13 @@
 .example {
-  padding-top: 20px;
-  margin-bottom: 30px;
-  background-color: $white-grey-bg;
+  padding-top: 17px;
 }
 
 .example__title {
   margin: 0;
   padding: 0;
-
-  padding-bottom: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 21px;
 
   font-size: 36px;
   line-height: 60px;
@@ -19,6 +18,7 @@
   margin: 0;
   padding: 0;
 
+  max-width: 270px;
   margin-bottom: 25px;
 
   font-family: $second-font, sans-serif;
@@ -30,17 +30,24 @@
 
 .example__parameters {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 
   margin-bottom: 35px;
+}
+
+.example__parameters-flex {
+  display: flex;
+  width: 280px;
+  align-self: center;
+  justify-content: space-between;
 }
 
 .example__parameter-wrapper {
   position: relative;
   width: 124px;
 
-  padding-top: 17px;
-  padding-bottom: 17px;
+  padding-top: 14px;
+  padding-bottom: 13px;
 
   color: $grey;
 
@@ -53,8 +60,8 @@
   position: absolute;
   width: 87px;
 
-  top: 100%;
-  left: 50%;
+  top: 104%;
+  left: 49%;
 
   padding-left: 16px;
   padding-right: 16px;
@@ -68,7 +75,7 @@
 
   text-align: center;
 
-  background-color: $white-grey-bg;
+  background-color: $white;
 }
 
 .example__parameter {
@@ -89,11 +96,173 @@
 
 .example__expenses {
   margin: 0;
-  margin-bottom: 46px;
-
+  margin-top: 37px;
+  width: 100%;
   font-size: 14px;
   line-height: 20px;
 
   text-transform: uppercase;
   text-align: center;
+}
+
+.example__slider {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    background-color: transparent;
+    padding-top: 0;
+  }
+
+  .example__title {
+    width: 708px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 65px;
+    padding-bottom: 0;
+  }
+
+  .example__description {
+    max-width: 680px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 52px;
+  }
+
+  .example__parameters {
+    flex-direction: row;
+    margin-bottom: 255px;
+  }
+
+  .example__parameters-flex {
+    width: 366px;
+    align-self: flex-start;
+  }
+
+  .example__parameter-wrapper {
+    width: 162px;
+    padding-top: 15px;
+    padding-bottom: 18px;
+  }
+
+  .example__parameter {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example__caption {
+    width: auto;
+    font-size: 14px;
+    line-height: 14px;
+    white-space: nowrap;
+    padding-left: 7px;
+    padding-right: 7px;
+
+    transform: translate(-50%, -10px);
+    background-color: $white;
+  }
+
+  .example__expenses {
+    width: 180px;
+    font-size: 20px;
+    line-height: 20px;
+
+    margin-top: 12px;
+    margin-left: auto;
+
+    text-align: right;
+  }
+
+  .example__expenses-value {
+    display: block;
+    margin-top: 8px;
+  }
+
+  .example__slider {
+    position: relative;
+    padding-bottom: 70px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      background-color: $white-grey-bg;
+      left: -350px;
+      right: -250px;
+      top: 0;
+      bottom: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
+  .example__fullwidth-bg {
+    background-color: $white-grey-bg;
+  }
+
+  .example__title {
+    width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .example__flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 75px;
+    padding-bottom: 70px;
+  }
+
+  .example__text-block {
+    display: flex;
+    flex-basis: 435px;
+    flex-direction: column;
+  }
+
+  .example__slider {
+    width: 690px;
+    padding-bottom: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .example__description {
+    margin-bottom: 72px;
+  }
+
+  .example__parameters {
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+
+  .example__parameter-wrapper {
+    margin-bottom: 61px;
+  }
+
+  .example__caption {
+    background-color: $white-grey-bg;
+  }
+
+  .example__expenses {
+    margin-left: 0;
+    margin-bottom: 7px;
+    width: 100%;
+    text-align: left;
+  }
+
+  .example__expenses-value {
+    margin-left: 60px;
+  }
 }

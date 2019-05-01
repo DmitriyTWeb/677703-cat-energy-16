@@ -5,24 +5,41 @@
 }
 
 .slider__image {
+  display: block;
   margin-bottom: 32px;
 }
 
-.slider__form {
+.slider__range {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 37px;
+  width: 196px;
 }
 
 .slider__input-range {
-  width: 85px;
-  margin-left: 19px;
-  margin-right: 19px;
+  margin-top: 0;
+  width: 84px;
+  height: auto;
+  // margin-left: 18px;
+  // margin-right: 16px;
+  margin-bottom: 0;
+  background: transparent;
+
+  cursor: pointer;
+  border-color: transparent;
+  color: transparent;
+}
+
+.slider__input-range::-webkit-slider-thumb {
+  background: transparent;
 }
 
 .slider__button {
   font-family: $base-font, $second-font, sans-serif;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
   font-size: 16px;
   line-height: 20px;
 
@@ -30,4 +47,81 @@
   border: none;
 
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__image {
+    width: 677px;
+    margin-top: -160px;
+    margin-bottom: 17px;
+  }
+
+  .slider__range {
+    width: 570px;
+    margin-bottom: 0;
+  }
+
+  .slider__input-range {
+    width: 428px;
+  }
+  .slider__button {
+    position: relative;
+    font-size: 20px;
+    line-height: 20px;
+
+    padding-left: 0;
+    padding-right: 0;
+
+    // padding-bottom: 7px;
+    // border-bottom: 1px dotted #bebebe;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      left: 0;
+      bottom: -7px;
+      border-bottom: 1px dotted #bebebe;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      outline: none;
+      border-bottom-style: solid;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      outline: none;
+    }
+
+    &:active::after {
+      border: none;
+    }
+  }
+
+  .slider__input-range {
+    width: 430px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 7px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slider__image {
+    margin-top: -265px;
+    width: 677px;
+  }
+
+  .slider__range {
+    margin-top: auto;
+  }
 }

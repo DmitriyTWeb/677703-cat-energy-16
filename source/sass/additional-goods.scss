@@ -4,6 +4,8 @@
 }
 
 .additional-goods__header {
+  display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
   padding-bottom: 30px;
@@ -11,10 +13,26 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+
+  &::after {
+    content: "";
+
+    margin-right: -20px;
+    margin-left: 22px;
+    margin-top: 5px;
+    flex-grow: 1;
+    flex-shrink: 0;
+
+    width: 25px;
+    height: 3px;
+    background-color: $light-green;
+  }
 }
 
 .additional-goods__list {
   @include list-reset();
+
+  margin-bottom: 40px;
 }
 
 .additional-goods__item {
@@ -43,7 +61,7 @@
 
 .additional-goods__table {
   margin-bottom: 15px;
-
+  border-collapse: collapse;
   font-family: $second-font, sans-serif;
   font-size: 14px;
   line-height: 14px;
@@ -51,13 +69,228 @@
   color: grey;
 }
 
-// .additional-goods__row {
-// }
-
 .additional-goods__data:last-child {
   text-align: right;
 }
 
 .additional-goods__button {
+  width: 100%;
   text-align: center;
+}
+
+.additional-goods__promo {
+
+}
+
+.additional-goods__promo-link {
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 35px;
+
+  padding-bottom: 44px;
+  flex-grow: 1;
+  background-color: $light-green;
+
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  cursor: pointer;
+}
+
+.additional-goods__promo-text {
+  position: relative;
+  display: block;
+  width: 170px;
+
+  margin: 0 auto;
+  padding-top: 187px;
+
+  font-family: $second-font, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: $white;
+
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: 50%;
+
+    width: 55px;
+    height: 60px;
+    transform: translateX(-50%);
+
+    background-image: url("../img/icon-gift.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .additional-goods__header {
+    position: relative;
+    display: block;
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 37px;
+    padding-bottom: 0;
+    margin-bottom: 76px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+
+      top: 50%;
+      transform: translateY(-50%);
+
+      width: 30px;
+      height: 3px;
+      background-color: $light-green;
+    }
+
+    &::before {
+      width: 100vw;
+      transform: translateX(calc(#{-100vw} - 37px));
+    }
+
+    &::after {
+      transform: translateY(-5px);
+      margin-left: 38px;
+      width: 100vw;
+    }
+  }
+
+  .additional-goods__list {
+    margin-bottom: 70px;
+
+    border: 1px solid $separator-light;
+  }
+
+  .additional-goods__item {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    padding-left: 37px;
+    padding-right: 36px;
+  }
+
+  .additional-goods__title {
+    font-size: 20px;
+    line-height: 20px;
+
+    margin-bottom: 27px;
+  }
+
+  .additional-goods__table {
+    margin-left: auto;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .additional-goods__data:last-child {
+    padding-left: 52px;
+  }
+
+  .additional-goods__promo-link {
+    position: relative;
+    padding-left: 424px;
+    padding-top: 73px;
+    padding-bottom: 73px;
+    margin-bottom: 75px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+  }
+
+  .additional-goods__promo-text {
+    position: static;
+    width: 170px;
+    margin: 0;
+    padding-top: 0;
+
+    font-size: 16px;
+    line-height: 20px;
+
+    text-align: left;
+
+    &::before {
+      top: 50%;
+      left: 91px;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-goods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 86px;
+  }
+
+  .additional-goods__list {
+    width: 895px;
+    margin-bottom: 0;
+    border-left: none;
+    border-right: none;
+  }
+
+  .additional-goods__item {
+    padding: 15px 0;
+    align-items: center;
+  }
+
+  .additional-goods__title {
+    width: 326px;
+    margin-bottom: 0;
+  }
+
+  .additional-goods__table {
+    width: 280px;
+    margin-left: 0;
+  }
+
+  .additional-goods__data {
+    &--left {
+      text-align: left;
+    }
+  }
+
+  .additional-goods__button {
+    width: 245px;
+    margin-left: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .additional-goods__promo-link {
+    flex-grow: 0;
+    width: 245px;
+    height: 290px;
+    margin: 0;
+    padding: 0;
+    padding-top: 190px;
+
+    background-image: url("../img/gift-photo-mobile@1x.jpg");
+  }
+
+  .additional-goods__promo-text {
+    margin: auto;
+    text-align: center;
+
+    &::before {
+      top: 65px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
 }
