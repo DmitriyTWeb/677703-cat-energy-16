@@ -5,7 +5,8 @@
 .example__title {
   margin: 0;
   padding: 0;
-
+  margin-left: 20px;
+  margin-right: 20px;
   padding-bottom: 21px;
 
   font-size: 36px;
@@ -116,6 +117,9 @@
   }
 
   .example__title {
+    width: 708px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 65px;
@@ -201,26 +205,22 @@
     margin-bottom: 0;
   }
 
+  .example__fullwidth-bg {
+    background-color: $white-grey-bg;
+  }
+
+  .example__title {
+    width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .example__flex-wrapper {
-    position: relative;
     display: flex;
     justify-content: space-between;
 
     padding-top: 75px;
     padding-bottom: 70px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      background-color: $white-grey-bg;
-      left: 0;
-      right: 0;
-      left: calc(#{-50vw} + #{50%});
-      right: calc(#{-50vw} + #{50%});
-      top: 0;
-      bottom: 0;
-    }
   }
 
   .example__text-block {
