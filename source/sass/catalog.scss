@@ -62,9 +62,7 @@
 
     text-align: center;
     text-transform: uppercase;
-  }
 
-  &--more {
     ::before {
       content: "";
       position: absolute;
@@ -85,8 +83,6 @@
     }
   }
 }
-
-
 
 .catalog__small-more {
   width: 100%;

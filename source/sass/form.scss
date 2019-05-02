@@ -359,7 +359,6 @@
 
     &--personal-data,
     &--program-type {
-
       &::after {
         width: 0;
       }
@@ -454,6 +453,7 @@
       padding-top: 5px;
       padding-bottom: 5px;
       padding-left: 58px;
+
       &::before {
         width: 40px;
         height: 40px;
