@@ -1,5 +1,5 @@
 .additional-goods {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   padding-top: 30px;
 }
 
@@ -8,7 +8,7 @@
   align-items: center;
   margin: 0;
   padding: 0;
-  padding-bottom: 30px;
+  padding-bottom: 32px;
 
   font-size: 24px;
   line-height: 24px;
@@ -19,7 +19,7 @@
 
     margin-right: -20px;
     margin-left: 22px;
-    margin-top: 5px;
+    margin-top: 4px;
     flex-grow: 1;
     flex-shrink: 0;
 
@@ -32,7 +32,7 @@
 .additional-goods__list {
   @include list-reset();
 
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 
 .additional-goods__item {
@@ -43,14 +43,17 @@
   padding-bottom: 17px;
 
   border-top: 1px solid $separator-light;
-  border-bottom: 1px solid $separator-light;
+
+  &:last-child {
+    border-bottom: 1px solid $separator-light;
+  }
 }
 
 .additional-goods__title {
   margin: 0;
   padding: 0;
 
-  margin-bottom: 15px;
+  margin-bottom: 11px;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
@@ -69,17 +72,21 @@
   color: grey;
 }
 
-.additional-goods__data:last-child {
-  text-align: right;
+.additional-goods__data {
+  padding: 0;
+
+  &:last-child {
+    text-align: right;
+  }
 }
 
 .additional-goods__button {
   width: 100%;
+
+  font-size: 16px;
+  line-height: 20px;
+  padding-bottom: 8px;
   text-align: center;
-}
-
-.additional-goods__promo {
-
 }
 
 .additional-goods__promo-link {
@@ -87,7 +94,7 @@
   align-items: stretch;
   margin-bottom: 35px;
 
-  padding-bottom: 44px;
+  padding-bottom: 42px;
   flex-grow: 1;
   background-color: $light-green;
 
@@ -105,7 +112,6 @@
 
   margin: 0 auto;
   padding-top: 187px;
-
   font-family: $second-font, sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -131,6 +137,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .additional-goods {
+    padding-top: 9px;
+  }
+
   .additional-goods__header {
     position: relative;
     display: block;
@@ -138,7 +148,7 @@
     line-height: 36px;
     margin-left: 37px;
     padding-bottom: 0;
-    margin-bottom: 76px;
+    margin-bottom: 78px;
 
     &::before,
     &::after {
@@ -148,6 +158,7 @@
       top: 50%;
       transform: translateY(-50%);
 
+      margin-top: 2px;
       width: 30px;
       height: 3px;
       background-color: $light-green;
@@ -155,26 +166,28 @@
 
     &::before {
       width: 100vw;
-      transform: translateX(calc(#{-100vw} - 37px));
+      transform: translateX(calc(#{-100vw} - 39px));
     }
 
     &::after {
       transform: translateY(-5px);
-      margin-left: 38px;
+      margin-top: 7px;
+      margin-left: 37px;
       width: 100vw;
     }
   }
 
   .additional-goods__list {
-    margin-bottom: 70px;
+    margin-bottom: 69px;
 
-    border: 1px solid $separator-light;
+    border-left: 1px solid $separator-light;
+    border-right: 1px solid $separator-light;
   }
 
   .additional-goods__item {
     flex-direction: row;
     flex-wrap: wrap;
-    padding-top: 27px;
+    padding-top: 26px;
     padding-bottom: 27px;
     padding-left: 37px;
     padding-right: 36px;
@@ -184,7 +197,12 @@
     font-size: 20px;
     line-height: 20px;
 
-    margin-bottom: 27px;
+    margin-bottom: 25px;
+  }
+
+  .additional-goods__button {
+    padding-top: 11px;
+    padding-bottom: 9px;
   }
 
   .additional-goods__table {
@@ -194,16 +212,21 @@
     line-height: 20px;
   }
 
-  .additional-goods__data:last-child {
-    padding-left: 52px;
+  .additional-goods__data {
+    padding-top: 3px;
+
+    &--right {
+      width: 95px;
+    }
   }
+
 
   .additional-goods__promo-link {
     position: relative;
     padding-left: 424px;
     padding-top: 73px;
-    padding-bottom: 73px;
-    margin-bottom: 75px;
+    padding-bottom: 67px;
+    margin-bottom: 76px;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
   }
 
@@ -219,7 +242,7 @@
     text-align: left;
 
     &::before {
-      top: 50%;
+      top: 95px;
       left: 91px;
       transform: translateY(-50%);
     }
@@ -231,7 +254,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 86px;
+
+    padding-top: 15px;
+    margin-bottom: 85px;
+  }
+
+  .additional-goods__header {
+    margin-left: 0;
   }
 
   .additional-goods__list {
@@ -242,7 +271,10 @@
   }
 
   .additional-goods__item {
-    padding: 15px 0;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    padding-left: 0;
+    padding-right: 0;
     align-items: center;
   }
 
@@ -252,12 +284,24 @@
   }
 
   .additional-goods__table {
-    width: 280px;
+    //width: 280px;
     margin-left: 0;
+    margin-top: 4px;
+    margin-bottom: 0;
   }
 
   .additional-goods__data {
+    &:last-child {
+      text-align: left;
+    }
+
     &--left {
+      width: 243px;
+      text-align: left;
+    }
+
+    &--right {
+      width: 45px;
       text-align: left;
     }
   }
@@ -278,7 +322,7 @@
     height: 290px;
     margin: 0;
     padding: 0;
-    padding-top: 190px;
+    padding-top: 143px;
 
     background-image: url("../img/gift-photo-mobile@1x.jpg");
   }

@@ -66,15 +66,15 @@
               <fieldset class="form__subsection form__subsection--personal-data">
                 <legend class="visually-hidden">Персональные данные кота</legend>
                 <div class="form__item form__item--personal-data">
-                  <label class="form__label" for="input-name">Имя*</label>
+                  <label class="form__label" for="input-name">Имя:*</label>
                   <input class="form__input" type="text" id="input-name" name="input-name" required placeholder="БАРСИК">
                 </div>
                 <div class="form__item form__item--personal-data">
-                  <label class="form__label" for="input-weight">Вес (кг):*</label>
+                  <label class="form__label" for="input-weight">Вес (кг):*&nbsp;</label>
                   <input class="form__input" type="number" id="input-weight" name="input-weight" required placeholder="7">
                 </div>
                 <div class="form__item form__item--personal-data">
-                  <label class="form__label" for="input-age">Возраст (кг):</label>
+                  <label class="form__label" for="input-age">Возраст (лет):</label>
                   <input class="form__input" type="number" id="input-age" name="input-age" placeholder="7">
                 </div>
               </fieldset>
@@ -91,7 +91,7 @@
                   </div>
                   <div class="form__item form__item--program-type">
                     <input class="form__radio visually-hidden" type="radio" id="program-advice" name="input-program" value="program-loss">
-                    <label class="form__label form__label--program" for="program-advice">не знаю (нужен совет)</label>
+                    <label class="form__label form__label--program" for="program-advice">не знаю (нужен ваш совет)</label>
                   </div>
               </fieldset>
             </div>
@@ -100,26 +100,26 @@
               <legend class="form__title form__title--contacts">Контактные данные (владельца кота)</legend>
               <div class="form__item-wrapper">
                 <div class="form__item form__item--contacts">
-                  <label class="form__label" for="input-email">e-mail:*</label>
+                  <label class="form__label form__label--contacts" for="input-email">e-mail:*</label>
                   <input class="form__input form__input--contacts" type="email" id="input-age" name="input-email" placeholder="kuklachev@gmail.com" required>
                 </div>
 
                 <div class="form__item form__item--contacts">
-                  <label class="form__label" for="input-phone">телефон:*</label>
+                  <label class="form__label  form__label--contacts" for="input-phone">телефон:* </label>
                   <input class="form__input form__input--phone" type="tel" id="input-phone" name="input-phone" placeholder="8 (960) 900-60-90" required>
                 </div>
               </div>
             </fieldset>
 
             <fieldset class="form__subsection form__subsection--comments">
-              <label class="form__title">Комментарий</label>
+              <label class="form__title form__title--comments">Комментарий</label>
               <textarea class="form__textarea" name="comments" placeholder="расскажите обо всех повадках кота"></textarea>
             </fieldset>
 
 
 
             <fieldset class="form__subsection form__subsection--options">
-              <legend class="form__title">Дополнительно</legend>
+              <legend class="form__title form__title--options">Дополнительно</legend>
               <div class="form__subsection-wrapper form__subsection-wrapper--options">
                 <div class="form__item form__item--options">
                   <input class="form__checkbox visually-hidden" type="checkbox" id="option-sugar" name="option-sugar" value="option-sugar" checked>
@@ -143,7 +143,7 @@
             <div class="form__footer-wrapper">
               <button class="form__button button" type="submit">отправить заявку</button>
               <p class="form__footnote">
-                * - Обязательные поля
+                * — Обязательные поля
               </p>
             </div>
 
@@ -159,7 +159,7 @@
               приглашаем к&nbsp;сотрудничеству дилеров!
             </b>
             <address class="address__address">
-              ул.&nbsp;Большая Конюшенная,д.&nbsp;19/8 <span class="address__city">Санкт-Петербург</span>
+              ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8 <span class="address__city">Санкт-Петербург</span>
             </address>
           </div>
         </div>

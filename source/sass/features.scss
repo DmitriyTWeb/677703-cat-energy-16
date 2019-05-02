@@ -92,7 +92,7 @@
 
   .features__title {
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 37px;
 
     font-size: 60px;
     line-height: 60px;
@@ -173,7 +173,7 @@
 
 @media (min-width: $desktop-width) {
   .features {
-    margin-bottom: 0;
+    margin-bottom: 28px;
 
     &::after {
       width: 0;
@@ -187,5 +187,27 @@
 
   .features__item {
     margin-left: 80px;
+
+    &::after {
+      top: -28px;
+    }
+
+    &--useful {
+      &::after {
+        right: 10px;
+      }
+    }
+
+    &--hight-calorie {
+      &::after {
+        right: 1px;
+      }
+    }
+
+    &--fast-result {
+      &::after {
+        right: -5px;
+      }
+    }
   }
 }

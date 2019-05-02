@@ -62,12 +62,12 @@
 
 .intro__image-wrapper {
   margin: 0;
-  margin-bottom: 0;
+  margin-bottom: 3px;
   padding: 0;
   align-self: center;
 }
 
-.intro_image {
+.intro__image {
   display: block;
 }
 
@@ -98,8 +98,8 @@
 
   .intro__title {
     margin-left: 87px;
-    margin-top: 31px;
-    margin-bottom: 42px;
+    margin-top: 33px;
+    margin-bottom: 40px;
     max-width: 490px;
 
     font-size: 60px;
@@ -146,13 +146,13 @@
 @media (min-width: $desktop-width) {
   .intro {
     position: relative;
-    min-height: 499px;
+    min-height: 552px;
     margin-bottom: 80px;
 
     &::before {
       content: "";
       position: absolute;
-      top: -115px;
+      top: -145px;
       left: 50%;
       right: 0;
       bottom: 0;
@@ -185,19 +185,21 @@
   }
 
   .intro__title {
-    margin-top: 85px;
-    margin-left: 83px;
+    margin-top: 80px;
+    margin-left: 80px;
     max-width: 415px;
   }
 
   .intro__slogan {
-    margin-left: 83px;
+    margin-left: 80px;
+    margin-bottom: 51px;
   }
 
   .intro__image-wrapper {
     position: absolute;
-    top: 0;
+    top: -3px;
     left: 450px;
+    margin: 0;
   }
 
   .intro__image {
@@ -206,6 +208,9 @@
   }
 
   .intro__button {
-    margin-left: 83px;
+    margin-left: 80px;
+    padding-top: 17px;
+    padding-bottom: 15px;
+    padding-right: 29px;
   }
 }

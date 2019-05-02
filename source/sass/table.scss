@@ -7,12 +7,15 @@
   color: $grey;
 }
 
-// .table__field {
-
-// }
+.table__field {
+  padding: 0;
+  margin: 0;
+}
 
 .table__value {
   text-align: right;
+  padding: 0;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -28,6 +31,14 @@
   .table__field,
   .table__value {
     padding-top: 9px;
-    padding-bottom: 9px;
+    padding-bottom: 6px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .table__field,
+  .table__value {
+    padding-top: 9px;
+    padding-bottom: 7px;
   }
 }

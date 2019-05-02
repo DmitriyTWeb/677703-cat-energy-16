@@ -4,17 +4,15 @@
   font-weight: 400;
 
   margin: 0;
-  padding-top: 18px;
-  padding-bottom: 30px;
-
-  //border-bottom: 1px solid $separator-light;
+  padding-top: 17px;
+  padding-bottom: 26px;
 }
 
 .inner-page__description {
   margin: 0;
   padding: 0;
 
-  margin-bottom: 38px;
+  margin-bottom: 36px;
 
   text-transform: uppercase;
 }
@@ -25,19 +23,27 @@
 
 @media (min-width: $tablet-width) {
   .inner-page__title {
-    padding-top: 65px;
+    padding-top: 61px;
     font-size: 60px;
     line-height: 60px;
     padding-bottom: 0;
-    margin-bottom: 87px;
+    margin-bottom: 53px;
     border: none;
   }
 
   .inner-page__description {
-    margin-bottom: 68px;
+    margin-bottom: 65px;
     width: 330px;
 
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+@media (min-width: $desktop-width) {
+  .inner-page__title {
+    padding-top: 45px;
+    margin-bottom: 55px;
+  }
+
 }

@@ -142,13 +142,14 @@
 
 @media (min-width: $tablet-width) {
   .goods-category {
+    margin-top: -2px;
     margin-bottom: 0;
   }
 
   .goods-category__list {
     display: flex;
     flex-direction: column;
-    margin-bottom: 13px;
+    margin-bottom: 15px;
   }
 
   .goods-category__item {
@@ -224,7 +225,8 @@
 
     &::after {
       content: "";
-      margin-left: 25px;
+      margin-top: -1px;
+      margin-left: 23px;
 
       width: 24px;
       height: 11px;
@@ -238,21 +240,23 @@
   .goods-category__list {
     flex-direction: row;
     justify-content: space-between;
+
+    margin-bottom: 76px;
   }
 
   .goods-category__item {
     width: 570px;
     padding-right: 55px;
-    padding-top: 80px;
-    padding-left: 53px;
-    padding-bottom: 63px;
-    margin-bottom: 80px;
+    padding-top: 78px;
+    padding-left: 52px;
+    padding-bottom: 60px;
+    margin-bottom: 0;
   }
 
   .goods-category__title {
     padding-right: 0;
-    padding-left: 165px;
-    margin-bottom: 70px;
+    padding-left: 162px;
+    margin-bottom: 74px;
 
     &::after {
       top: 0;
@@ -263,34 +267,41 @@
 
       transform: translate(0, -30%);
     }
-  }
 
-  .goods-category__title--slim {
-    &::before {
-      top: 0;
-      left: 14px;
-      right: auto;
-      width: 70px;
-      height: 97px;
+    &--slim {
+      &::before {
+        top: 0;
+        left: 14px;
+        right: auto;
+        width: 70px;
+        height: 97px;
 
-      transform: translate(0, -38%);
+        transform: translate(0, -38%);
+      }
     }
-  }
 
-  .goods-category__title--pro {
-    &::before {
-      top: 0;
-      left: -20px;
-      right: auto;
-      width: 134px;
-      height: 56px;
 
-      transform: translate(0, -15%);
+    &--pro {
+      &::before {
+        top: 0;
+        left: -18px;
+        right: auto;
+        width: 134px;
+        height: 56px;
+
+        transform: translate(0, -15%);
+      }
     }
   }
 
   .goods-category__description {
     margin-right: 0;
-    margin-bottom: 34px;
+    margin-bottom: 32px;
+  }
+
+  .goods-category__button {
+    &::after {
+      margin-top: -3px;
+    }
   }
 }
