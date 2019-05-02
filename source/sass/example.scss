@@ -213,14 +213,15 @@
     width: 1220px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 72px;
   }
 
   .example__flex-wrapper {
     display: flex;
     justify-content: space-between;
 
-    padding-top: 75px;
-    padding-bottom: 70px;
+    padding-top: 70px;
+    padding-bottom: 68px;
   }
 
   .example__text-block {
@@ -230,16 +231,22 @@
   }
 
   .example__slider {
-    width: 690px;
     padding-bottom: 0;
+    margin-left: auto;
+    margin-right: 0;
 
     &::before {
       display: none;
     }
   }
 
+  .example__image-wrapper {
+    position: relative;
+    right: -40px;
+  }
+
   .example__description {
-    margin-bottom: 72px;
+    margin-bottom: 70px;
   }
 
   .example__parameters {
@@ -248,7 +255,7 @@
   }
 
   .example__parameter-wrapper {
-    margin-bottom: 61px;
+    margin-bottom: 48px;
   }
 
   .example__caption {
@@ -263,6 +270,8 @@
   }
 
   .example__expenses-value {
-    margin-left: 60px;
+    display: inline-block;
+    margin-top: 0;
+    margin-left: 59px;
   }
 }
