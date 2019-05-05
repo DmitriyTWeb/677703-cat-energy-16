@@ -127,7 +127,23 @@
   text-align: center;
 
   &::before {
-    content: "";
+    // content: "";
+    // position: absolute;
+    // top: 65px;
+    // left: 50%;
+
+    // width: 55px;
+    // height: 60px;
+    // transform: translateX(-50%);
+
+    // background-image: url("../img/icon-gift.svg");
+    // background-position: 0 0;
+    // background-repeat: no-repeat;
+  }
+}
+
+.additional-goods__svg {
+  &--gift {
     position: absolute;
     top: 65px;
     left: 50%;
@@ -135,10 +151,6 @@
     width: 55px;
     height: 60px;
     transform: translateX(-50%);
-
-    background-image: url("../img/icon-gift.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
   }
 }
 

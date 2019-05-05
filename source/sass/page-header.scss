@@ -31,6 +31,10 @@
   }
 }
 
+.page-header__logo-image {
+  height: 38px;
+}
+
 @media (min-width: $tablet-width) {
   .page-header {
     flex-direction: row;
@@ -50,6 +54,7 @@
 
   .page-header__logo-image {
     width: 173px;
+    height: 57px;
   }
 }
 

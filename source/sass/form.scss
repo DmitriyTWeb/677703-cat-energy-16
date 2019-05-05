@@ -70,6 +70,7 @@
   }
 
   &--contacts {
+    position: relative;
     margin-bottom: 14px;
 
     &:last-child {
@@ -123,20 +124,53 @@
   &--contacts,
   &--phone {
     padding-right: 40px;
+
+    &:focus-within ~ .form__svg {
+      fill: #68b738;
+    }
+
+    &:invalid ~ .form__svg {
+      fill: #ff8282;
+    }
   }
 
-  &--contacts {
-    background-image: url("../img/icon-mail.svg");
-    background-size: 17px 13px;
-    background-position: right 16px center;
-    background-repeat: no-repeat;
+  // &--contacts {
+  //   background-image: url("../img/icon-mail.svg");
+  //   background-size: 17px 13px;
+  //   background-position: right 16px center;
+  //   background-repeat: no-repeat;
+  // }
+
+  // &--phone {
+  //   background-image: url("../img/icon-phone.svg");
+  //   background-size: 20px 20px;
+  //   background-position: right 12px center;
+  //   background-repeat: no-repeat;
+  // }
+}
+
+.form__svg {
+  position: absolute;
+  fill: #111111;
+
+  &--mail {
+    top: 50%;
+    right: 21px;
+
+    width: 17px;
+    height: 13px;
+
+    transform: translateY(-50%);
   }
 
   &--phone {
-    background-image: url("../img/icon-phone.svg");
-    background-size: 20px 20px;
-    background-position: right 12px center;
-    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+
+    top: 50%;
+    right: 17px;
+
+    transform: translateY(-50%);
   }
 }
 
