@@ -1,12 +1,13 @@
-.copyright {
+// .copyright {
+// }
+
+.copyright__link {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 22px;
   padding-bottom: 22px;
-}
 
-.copyright__link {
   margin: 0;
   padding: 0;
 
@@ -15,10 +16,23 @@
   line-height: 16px;
 
   color: $grey;
+
+  &:hover .copyright__svg,
+  &:focus .copyright__svg{
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 // .copyright__logo {
 // }
+
+.copyright__svg {
+  fill: #666;
+}
 
 @media (min-width: $tablet-width) {
   .copyright {
