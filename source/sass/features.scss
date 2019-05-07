@@ -196,7 +196,7 @@
 
 @media (min-width: $desktop-width) {
   .features {
-    margin-bottom: 28px;
+    margin-bottom: 25px;
 
     &::after {
       width: 0;
@@ -212,12 +212,12 @@
     margin-left: 80px;
 
     &::after {
-      top: -28px;
+      top: -39px;
     }
 
     &--useful {
       &::after {
-        right: 10px;
+        right: 15px;
       }
     }
 

@@ -265,7 +265,15 @@
 
     text-align: left;
 
-    &::before {
+    // &::before {
+    //   top: 95px;
+    //   left: 91px;
+    //   transform: translateY(-50%);
+    // }
+  }
+
+  .additional-goods__svg {
+    &--gift {
       top: 95px;
       left: 91px;
       transform: translateY(-50%);
