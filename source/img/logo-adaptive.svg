@@ -20,7 +20,7 @@
       display: inline-block;
     }
 
-   .logo-tablet {
+    .logo-tablet {
       display: none;
     }
 
