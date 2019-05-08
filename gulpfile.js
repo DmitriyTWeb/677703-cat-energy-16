@@ -29,7 +29,7 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
-gulp.task("server", function (done) {
+gulp.task("server", function () {
   server.init({
     server: "build/",
     notify: false,
@@ -43,7 +43,7 @@ gulp.task("server", function (done) {
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
 
-gulp.task("refresh", function () {
+gulp.task("refresh", function (done) {
   server.reload();
   done();
 });
