@@ -24,8 +24,9 @@
   cursor: pointer;
 
   &:hover,
-  &:active {
-    //здесь будет код
+  &:active,
+  &:focus {
+    outline: none;
   }
 }
 
