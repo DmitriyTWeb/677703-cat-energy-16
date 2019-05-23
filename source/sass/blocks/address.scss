@@ -32,11 +32,27 @@
 }
 
 .address__iframe {
-  display: block;
+  display: none;
   border: none;
   width: 100%;
 
   background-color: #faf6e6;
+}
+
+.address__bg-map {
+  display: none;
+}
+
+.address__bg-map--nojs {
+  display: block;
+}
+
+.address__iframe--json {
+  display: block;
+}
+
+.address__img {
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
@@ -111,11 +127,10 @@
     padding-top: 63px;
     padding-bottom: 57px;
     margin-bottom: 0;
-    top: -4px;
+    top: 100px;
     left: 0;
     width: 570px;
 
-    transform: translate(0, 50%);
     background-color: $white;
 
     &::before {

@@ -73,6 +73,10 @@ a {
 }
 
 @media (min-width: $tablet-width) {
+  body {
+    overflow-x: hidden;
+  }
+
   .button {
     padding-top: 17px;
     padding-bottom: 17px;

@@ -125,21 +125,6 @@
   color: $white;
 
   text-align: center;
-
-  &::before {
-    // content: "";
-    // position: absolute;
-    // top: 65px;
-    // left: 50%;
-
-    // width: 55px;
-    // height: 60px;
-    // transform: translateX(-50%);
-
-    // background-image: url("../img/icon-gift.svg");
-    // background-position: 0 0;
-    // background-repeat: no-repeat;
-  }
 }
 
 .additional-goods__svg {
@@ -177,14 +162,13 @@
       transform: translateY(-50%);
 
       margin-top: 2px;
-      width: 30px;
       height: 3px;
       background-color: $light-green;
     }
 
     &::before {
-      width: 100vw;
-      transform: translateX(calc(#{-100vw} - 39px));
+      left: calc(-50vw + 50% - 37px);
+      right: calc(100% + 37px);
     }
 
     &::after {
@@ -333,7 +317,7 @@
     }
 
     &--right {
-      width: 45px;
+      width: 80px;
       text-align: left;
     }
   }

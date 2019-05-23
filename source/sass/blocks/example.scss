@@ -1,5 +1,6 @@
 .example {
   padding-top: 17px;
+  background-color: $white-grey-bg;
 }
 
 .example__title {
@@ -75,7 +76,7 @@
 
   text-align: center;
 
-  background-color: $white;
+  background-color: $white-grey-bg;
 }
 
 .example__parameter {
@@ -114,6 +115,8 @@
   .example {
     background-color: transparent;
     padding-top: 0;
+
+    overflow: hidden;
   }
 
   .example__title {
@@ -185,16 +188,21 @@
   .example__slider {
     position: relative;
     padding-bottom: 70px;
+    margin-left: 0;
+    margin-right: 0;
 
     &::before {
       content: "";
       position: absolute;
       z-index: -1;
       background-color: $white-grey-bg;
-      left: -350px;
-      right: -250px;
+
+      left: calc(#{-50vw} + #{354px});
+      right: calc(#{-50vw} + #{354px});
+
       top: 0;
       bottom: 0;
+      overflow: hidden;
     }
   }
 }
@@ -203,6 +211,8 @@
   .example {
     padding-top: 0;
     margin-bottom: 0;
+
+    overflow: visible;
   }
 
   .example__fullwidth-bg {

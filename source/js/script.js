@@ -1,17 +1,19 @@
 var navMain = document.querySelector('.main-nav--nojs');
 var navToggle = document.querySelector('.main-nav__toggle');
+var bgMap = document.querySelector('.address__bg-map');
+var iframe = document.querySelector('.address__iframe');
 
 navMain.classList.remove('main-nav--nojs');
+bgMap.classList.remove('address__bg-map--nojs');
+
+iframe.classList.add('address__iframe--json');
 
 navToggle.addEventListener('click', function() {
   console.log('нажата кнопка открытия меню');
   if (navMain.classList.contains('main-nav--closed')) {
-    console.log("основная ветвь");
     navMain.classList.remove('main-nav--closed');
     navMain.classList.add('main-nav--opened');
-    console.log("основная ветвь");
   } else {
-    console.log("заходим в ветвть иначе");
     navMain.classList.add('main-nav--closed');
     navMain.classList.remove('main-nav--opened');
   }

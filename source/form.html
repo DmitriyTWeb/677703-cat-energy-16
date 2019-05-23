@@ -15,10 +15,6 @@
 
   <body class="inner-page">
 
-    <div style="display: none;">
-      <include src="build/img/sprite_auto.svg"></include>
-    </div>
-
     <header class="page-header">
       <div class="container">
         <div class="page-header__wrapper">
@@ -87,7 +83,7 @@
               <fieldset class="form__subsection form__subsection--program-type">
                 <legend class="visually-hidden">Выбор программы питания</legend>
                   <div class="form__item form__item--program-type">
-                    <input class="form__radio visually-hidden" type="radio" id="program-loss" name="input-program" value="program-loss" checked="">
+                    <input class="form__radio visually-hidden" type="radio" id="program-loss" name="input-program" value="program-loss" checked>
                     <label class="form__label form__label--program" for="program-loss">Похудение</label>
                   </div>
                   <div class="form__item form__item--program-type">
@@ -102,13 +98,13 @@
             </div>
 
             <fieldset class="form__subsection form__subsection--contacts">
-              <legend class="form__title form__title--contacts">Контактные данные (владельца кота)</legend>
+              <legend class="form__title form__title--contacts">Контактные данные (владельца&nbsp;кота)</legend>
               <div class="form__item-wrapper">
                 <div class="form__item form__item--contacts">
                   <label class="form__label form__label--contacts" for="input-email">e-mail:*</label>
                   <input class="form__input form__input--contacts" type="email" id="input-email" name="input-email" placeholder="kuklachev@gmail.com" required="">
                   <svg class="form__svg form__svg--mail" width="17" height="13">
-                    <use xlink:href="#icon-mail"></use>
+                    <use xlink:href="img/sprite_auto.svg#icon-mail"></use>
                   </svg>
                 </div>
 
@@ -116,7 +112,7 @@
                   <label class="form__label  form__label--contacts" for="input-phone">телефон:* </label>
                   <input class="form__input form__input--phone" type="tel" id="input-phone" name="input-phone" placeholder="8 (960) 900-60-90" required="">
                   <svg class="form__svg form__svg--phone" width="20" height="20">
-                    <use xlink:href="#icon-phone"></use>
+                    <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
                   </svg>
                 </div>
               </div>
@@ -133,7 +129,7 @@
               <legend class="form__title form__title--options">Дополнительно</legend>
               <div class="form__subsection-wrapper form__subsection-wrapper--options">
                 <div class="form__item form__item--options">
-                  <input class="form__checkbox visually-hidden" type="checkbox" id="option-sugar" name="option-sugar" value="option-sugar" checked="">
+                  <input class="form__checkbox visually-hidden" type="checkbox" id="option-sugar" name="option-sugar" value="option-sugar" checked>
                   <label class="form__label form__label--options" for="option-sugar">Сахарозаменитель</label>
                 </div>
                 <div class="form__item form__item--options">
@@ -165,7 +161,7 @@
 
       <section class="address">
         <div class="container address__relative">
-          <div class="address__header address__header--inner">
+          <div class="address__header">
             <b class="address__cta">
               приглашаем к&nbsp;сотрудничеству дилеров!
             </b>
@@ -174,21 +170,30 @@
             </address>
           </div>
         </div>
-        <iframe class="address__iframe" src="https://yandex.ru/map-widget/v1/-/CBFXQGSKCD" height="360"></iframe>
+        <picture class="address__bg-map address__bg-map--nojs">
+          <source type="image/webp" media="(min-width: 1280px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
 
+          <source media="(min-width: 1280px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+
+          <img class="address__img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="100%" height="360" alt="Схема проезда до магазина.">
+        </picture>
+        <iframe class="address__iframe address__iframe--nojs" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2sph!4v1558553916812!5m2!1sen!2sph" height="360"></iframe>
       </section>
 
     </main>
 
 
-    <footer class="page-footer">
+   <footer class="page-footer">
       <div class="container">
 
         <div class="page-footer__wrapper">
 
-          <a class="page-footer__logo logo" href="#">
+          <a class="page-footer__logo logo">
             <svg class="page-footer__logo-image" width="128" height="24">
-              <use xlink:href="img/sprite.svg#logo-footer"></use>
+              <use xlink:href="img/sprite_auto.svg#logo-footer"></use>
             </svg>
           </a>
 
@@ -197,30 +202,21 @@
               <li class="social__item">
                 <a class="social__link social__link--vkontakte" href="#">
                   <svg class="social__svg social__svg--vk" width="30" height="16">
-                    <use xlink:href="#icon-vk"></use>
-                  </svg>
-                  <svg class="social__svg social__svg--vk-mobile" width="22" height="12">
-                    <use xlink:href="#icon-vk-mobile"></use>
+                    <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
                   </svg>
                   <span class="visually-hidden">Мы в Вконтакте</span></a>
               </li>
               <li class="social__item">
                 <a class="social__link social__link--instagram" href="#">
                   <svg class="social__svg social__svg--insta" width="23" height="23">
-                    <use xlink:href="#icon-insta"></use>
-                  </svg>
-                  <svg class="social__svg social__svg--insta-mobile" width="16" height="16">
-                    <use xlink:href="#icon-insta-mobile"></use>
+                    <use xlink:href="img/sprite_auto.svg#icon-insta"></use>
                   </svg>
                   <span class="visually-hidden">Мы в Инстаграме</span></a>
               </li>
               <li class="social__item">
                 <a class="social__link social__link--facebook" href="#">
                   <svg class="social__svg social__svg--fb" width="14" height="28">
-                    <use xlink:href="#icon-fb"></use>
-                  </svg>
-                  <svg class="social__svg social__svg--fb-mobile" width="10" height="19">
-                    <use xlink:href="#icon-fb-mobile"></use>
+                    <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
                   </svg>
                   <span class="visually-hidden">Мы в Фейсбуке</span></a>
               </li>
@@ -231,7 +227,7 @@
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             HTML Academy
             <svg class="copyright__svg" width="27" height="34">
-              <use xlink:href="#htmlacademy"></use>
+              <use xlink:href="img/sprite_auto.svg#htmlacademy"></use>
             </svg>
           </a>
           </div>
