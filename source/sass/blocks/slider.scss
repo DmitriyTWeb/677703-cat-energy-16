@@ -27,7 +27,7 @@
   border: 1px solid #cdcdcd;
   border-radius: 5px;
 
-  &:before {
+  &::before {
     content: "";
     position: absolute;
 
@@ -120,7 +120,7 @@
     background-color: #dcdcdc;
     border-radius: 3px;
 
-    &:before {
+    &::before {
       display: none;
     }
   }
@@ -139,7 +139,7 @@
     background-color: white;
     border: 1px solid #dcdcdc;
 
-    &:before {
+    &::before {
       content: "";
       position: absolute;
       width: 10px;

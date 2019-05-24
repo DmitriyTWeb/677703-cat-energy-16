@@ -1,5 +1,6 @@
 .social__list {
   display: flex;
+
   @include list-reset();
 
   justify-content: center;

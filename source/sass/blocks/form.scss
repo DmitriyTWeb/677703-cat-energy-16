@@ -71,6 +71,10 @@
   &--options {
     display: block;
     margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 39px;
+    }
   }
 
   &--contacts {
@@ -79,12 +83,6 @@
 
     &:last-child {
       margin-bottom: 0;
-    }
-  }
-
-  &--options {
-    &:last-child {
-      margin-bottom: 39px;
     }
   }
 }
@@ -308,8 +306,6 @@
   }
 
   &::after {
-    //width: 100%;
-    //margin-left: 22px;
     margin-top: 2px;
     left: 100%;
     right: calc(#{-100vw} + #{100%} + #{20px});
@@ -326,6 +322,7 @@
 
   &--comments {
     margin-bottom: 33px;
+
     &::after {
       left: 142px;
     }
@@ -333,6 +330,7 @@
 
   &--options {
     margin-bottom: 40px;
+
     &::after {
       left: 164px;
     }
