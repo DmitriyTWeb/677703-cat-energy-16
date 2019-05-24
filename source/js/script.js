@@ -9,7 +9,6 @@ bgMap.classList.remove('address__bg-map--nojs');
 iframe.classList.add('address__iframe--json');
 
 navToggle.addEventListener('click', function() {
-  console.log('нажата кнопка открытия меню');
   if (navMain.classList.contains('main-nav--closed')) {
     navMain.classList.remove('main-nav--closed');
     navMain.classList.add('main-nav--opened');

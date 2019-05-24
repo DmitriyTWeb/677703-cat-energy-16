@@ -57,21 +57,25 @@
   display: flex;
   align-items: center;
 
-  margin-bottom: 14px;
-
-  &--options,
-  &--program-type {
-    display: block;
-    margin-bottom: 23px;
-  }
+  margin-bottom: 17px;
 
   &:last-child {
+    margin-bottom: 25px;
+  }
+
+  &--program-type {
+    display: block;
+    margin-bottom: 22px;
+  }
+
+  &--options {
+    display: block;
     margin-bottom: 24px;
   }
 
   &--contacts {
     position: relative;
-    margin-bottom: 14px;
+    margin-bottom: 16px;
 
     &:last-child {
       margin-bottom: 0;
@@ -315,7 +319,7 @@
     margin-bottom: 33px;
 
     &::after {
-      top: 13px;
+      top: 11px;
       left: 200px;
     }
   }
@@ -415,7 +419,7 @@
     }
 
     &--contacts {
-      margin-bottom: 61px;
+      margin-bottom: 65px;
     }
 
     &--comments {
@@ -441,7 +445,7 @@
     margin-bottom: 20px;
 
     &--program-type {
-      margin-bottom: 31px;
+      margin-bottom: 32px;
 
       &:last-child {
         margin-bottom: 0;
@@ -455,7 +459,7 @@
     }
 
     &--personal-data {
-      margin-bottom: 17px;
+      margin-bottom: 19px;
 
       &:last-child {
         margin-bottom: 0;
@@ -556,10 +560,12 @@
     &::before {
       left: calc(-50vw + 50%);
       right: calc(100% + 40px);
+      margin-top: 5px;
     }
 
     &::after {
       right: calc(#{-50vw} + #{50%});
+      margin-top: 6px;
     }
 
     &--contacts {
@@ -567,7 +573,7 @@
 
       &::after {
         left: 555px;
-        margin-top: 5px;
+        margin-top: 12px;
       }
     }
 
@@ -620,7 +626,7 @@
 
 @media (min-width: $desktop-width) {
   .form {
-    margin-bottom: 83px;
+    margin-bottom: 80px;
   }
 
   .form__subsection-wrapper {
@@ -650,11 +656,11 @@
     }
 
     &--contacts {
-      margin-bottom: 65px;
+      margin-bottom: 67px;
     }
 
     &--comments {
-      margin-bottom: 67px;
+      margin-bottom: 68px;
     }
 
     &--options {
@@ -689,22 +695,18 @@
   }
 
   .form__title {
-    &--contacts {
-      &::before {
-        margin-top: 2px;
-      }
+    &::before {
+      margin-top: 6px;
     }
 
-    &--comments {
+    &--contacts {
       &::before {
-        margin-top: 3px;
+        margin-top: 5px;
       }
     }
 
     &--options {
-      &::before {
-        margin-top: 3px;
-      }
+      margin-bottom: 68px;
     }
   }
 

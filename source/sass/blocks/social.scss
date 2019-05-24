@@ -1,21 +1,20 @@
 .social__list {
   display: flex;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 0;
-  padding-right: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 135px;
-  justify-content: space-between;
-  //align-items: center;
+  @include list-reset();
 
-  list-style: none;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-right: 12px;
 }
 
 .social__item {
   display: flex;
   align-items: center;
+  margin-left: 38px;
+
+  &:first-child {
+    margin-left: 0;
+  }
 }
 
 .social__link {
@@ -55,6 +54,10 @@
   .social__list {
     margin-top: -1px;
     margin-right: 6px;
+  }
+
+  .social__item {
+    margin-left: 28px;
   }
 
   .social__svg {

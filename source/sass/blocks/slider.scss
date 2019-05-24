@@ -98,29 +98,15 @@
     padding-left: 0;
     padding-right: 0;
 
-    &::after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 1px;
-      left: 0;
-      bottom: -7px;
-      border-bottom: 1px dotted #bebebe;
-    }
+    padding-bottom: 7px;
+    border-bottom: 1px dotted #bebebe;
 
-    &:hover::after,
-    &:focus::after {
-      outline: none;
+    &:hover,
+    &:focus {
       border-bottom-style: solid;
     }
 
-    &:hover,
-    &:focus,
     &:active {
-      outline: none;
-    }
-
-    &:active::after {
       border: none;
     }
   }
@@ -144,7 +130,7 @@
     width: 34px;
     height: 34px;
 
-    left: 50%;
+    left: 198px;
     top: 50%;
 
     transform: translate(0, -50%);

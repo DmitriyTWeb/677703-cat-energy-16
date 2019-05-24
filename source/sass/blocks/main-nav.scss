@@ -163,6 +163,18 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav {
+    width: 50%;
+  }
+
+  .main-nav__wrapper {
+    margin-left: auto;
+  }
+
+  .main-nav__list {
+    flex-wrap: wrap;
+  }
+
   .main-nav__item {
     margin-left: 34px;
   }

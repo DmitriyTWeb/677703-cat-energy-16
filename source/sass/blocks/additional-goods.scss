@@ -167,8 +167,9 @@
     }
 
     &::before {
+      margin-top: 4px;
       left: calc(-50vw + 50% - 37px);
-      right: calc(100% + 37px);
+      right: calc(100% + 40px);
     }
 
     &::after {
@@ -335,7 +336,7 @@
   .additional-goods__promo-link {
     flex-grow: 0;
     width: 245px;
-    height: 290px;
+    //height: 290px;
     margin: 0;
     padding: 0;
     padding-top: 143px;

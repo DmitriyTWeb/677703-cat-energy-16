@@ -34,19 +34,6 @@
       position: absolute;
     }
 
-    &::before {
-      // top: -8px;
-      // left: 10px;
-      // width: 35px;
-      // height: 49px;
-
-      // z-index: 2;
-
-      // background-image: url("../img/icon-cat-slim.svg");
-      // background-position: 0 0;
-      // background-repeat: no-repeat;
-    }
-
     &::after {
       top: -6px;
       left: 2px;
@@ -65,19 +52,6 @@
       position: absolute;
     }
 
-    &::before {
-      // top: 5px;
-      // left: -7px;
-      // width: 67px;
-      // height: 28px;
-
-      // z-index: 2;
-
-      // background-image: url("../img/icon-cat-pro.svg");
-      // background-position: 0 0;
-      // background-repeat: no-repeat;
-    }
-
     &::after {
       top: -6px;
       left: 2px;
@@ -91,6 +65,7 @@
 }
 
 .goods-category__svg {
+  flex-shrink: 0;
   &--slim,
   &--pro {
     position: absolute;
@@ -153,24 +128,6 @@
 
   text-transform: uppercase;
 
-  // &::after {
-  //   content: "";
-  //   margin-left: 12px;
-
-  //   width: 24px;
-  //   height: 11px;
-
-  //   background-image: url("../img/icon-right-arrow-long.svg");
-  //   background-position: 0 0;
-  //   background-repeat: no-repeat;
-  // }
-
-  // &:hover::after,
-  // &:focus::after {
-  //   width: 33px;
-  //   background-image: url("../img/icon-right-arrow-verylong.svg");
-  // }
-
   &:hover .goods-category__svg {
     &--arrow-long {
       display: none;
@@ -221,25 +178,7 @@
       height: 200px;
     }
 
-    &--slim {
-      // &::before {
-      //   top: 4px;
-      //   left: auto;
-      //   right: 92px;
-      //   width: 140px;
-      //   height: 194px;
-      // }
-    }
-
     &--pro {
-      // &::before {
-      //   top: 58px;
-      //   left: auto;
-      //   right: 28px;
-      //   width: 268px;
-      //   height: 112px;
-      // }
-
       &::after {
         top: 14px;
         left: auto;
@@ -288,17 +227,7 @@
   .goods-category__button {
     font-size: 20px;
     line-height: 20px;
-
-    // &::after {
-    //   content: "";
-    //   margin-top: -1px;
-    //   margin-left: 23px;
-
-    //   width: 24px;
-    //   height: 11px;
-
-    //   background-image: url("../img/icon-right-arrow-long.svg");
-    // }
+    max-width: 90%;
   }
 }
 
