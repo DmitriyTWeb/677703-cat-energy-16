@@ -87,6 +87,31 @@
   }
 }
 
+.form__svg {
+  position: absolute;
+  fill: #111111;
+
+  &--mail {
+    top: 50%;
+    right: 16px;
+
+    width: 17px;
+    height: 13px;
+
+    transform: translateY(-50%);
+  }
+
+  &--phone {
+    width: 20px;
+    height: 20px;
+
+    top: 50%;
+    right: 13px;
+
+    transform: translateY(-50%);
+  }
+}
+
 .form__input {
   position: relative;
   flex-grow: 1;
@@ -109,7 +134,7 @@
   text-transform: uppercase;
 
   &:hover {
-    border-color: #cdcdcd;
+    box-shadow: 0 0 0 1px #cdcdcd;
   }
 
   &:focus,
@@ -137,31 +162,6 @@
     &:invalid ~ .form__svg {
       fill: #ff8282;
     }
-  }
-}
-
-.form__svg {
-  position: absolute;
-  fill: #111111;
-
-  &--mail {
-    top: 50%;
-    right: 16px;
-
-    width: 17px;
-    height: 13px;
-
-    transform: translateY(-50%);
-  }
-
-  &--phone {
-    width: 20px;
-    height: 20px;
-
-    top: 50%;
-    right: 13px;
-
-    transform: translateY(-50%);
   }
 }
 
@@ -235,6 +235,25 @@
       opacity: 0.3;
     }
   }
+}
+
+.form__checkbox:hover ~ .form__label--options,
+.form__radio:hover ~ .form__label--program {
+  &::before {
+    border-color: #bababa;
+  }
+}
+
+.form__checkbox:focus ~ .form__label--options,
+.form__radio:focus ~ .form__label--program {
+  &::before {
+    border-color: #bababa;
+  }
+}
+
+.form__checkbox:active ~ .form__label--options,
+.form__radio:active ~ .form__label--program {
+  opacity: 0.3;
 }
 
 .form__checkbox:disabled ~ .form__label--options,
@@ -680,12 +699,6 @@
     justify-content: space-between;
   }
 
-  .form__title {
-    &--contacts {
-      margin-bottom: 75px;
-    }
-  }
-
   .form__item {
     &--contacts {
       width: 570px;
@@ -719,6 +732,8 @@
     }
 
     &--contacts {
+      margin-bottom: 75px;
+
       &::before {
         margin-top: 5px;
       }

@@ -13,6 +13,17 @@
   text-align: center;
 }
 
+.page-footer__logo-image {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .page-footer__social {
   padding-top: 22px;
   padding-bottom: 17px;
