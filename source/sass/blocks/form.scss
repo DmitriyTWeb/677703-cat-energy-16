@@ -405,19 +405,19 @@
     }
 
     &--personal-data {
-      margin-bottom: 72px;
+      margin-bottom: 73px;
     }
 
     &--program-type {
       margin-bottom: 77px;
-      padding-top: 33px;
+      padding-top: 34px;
       padding-left: 28px;
       padding-bottom: 33px;
       border: 1px solid $separator-light;
     }
 
     &--contacts {
-      margin-bottom: 65px;
+      margin-bottom: 67px;
     }
 
     &--comments {
@@ -425,7 +425,7 @@
     }
 
     &--options {
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
   }
 
@@ -443,11 +443,15 @@
     margin-bottom: 20px;
 
     &--program-type {
-      margin-bottom: 32px;
+      margin-bottom: 33px;
 
       &:last-child {
         margin-bottom: 0;
       }
+    }
+
+    &--contacts {
+      margin-bottom: 22px;
     }
 
     &--options {
@@ -457,7 +461,7 @@
     }
 
     &--personal-data {
-      margin-bottom: 19px;
+      margin-bottom: 22px;
 
       &:last-child {
         margin-bottom: 0;
@@ -468,6 +472,7 @@
   .form__label {
     font-size: 20px;
     line-height: 20px;
+    margin-right: 19px;
     text-transform: uppercase;
 
     &--program {
@@ -488,7 +493,11 @@
     }
 
     &--contacts {
-      margin-right: 20px;
+      margin-right: 16px;
+    }
+
+    &--contacts-email {
+      margin-right: 22px;
     }
 
     &--options {
@@ -509,8 +518,8 @@
     font-size: 20px;
     line-height: 20px;
 
-    padding-top: 10px;
-    padding-bottom: 13px;
+    padding-top: 11px;
+    padding-bottom: 12px;
     padding-left: 19px;
 
     &--contacts {
@@ -567,7 +576,7 @@
     }
 
     &--contacts {
-      margin-bottom: 74px;
+      margin-bottom: 76px;
 
       &::after {
         left: 555px;
@@ -576,7 +585,7 @@
     }
 
     &--comments {
-      margin-bottom: 74px;
+      margin-bottom: 75px;
 
       &::after {
         left: 220px;
@@ -624,7 +633,7 @@
 
 @media (min-width: $desktop-width) {
   .form {
-    margin-bottom: 80px;
+    margin-bottom: 82px;
   }
 
   .form__subsection-wrapper {
@@ -632,7 +641,7 @@
 
     &--data {
       justify-content: space-between;
-      margin-bottom: 70px;
+      margin-bottom: 72px;
     }
 
     &--options {
@@ -654,7 +663,7 @@
     }
 
     &--contacts {
-      margin-bottom: 67px;
+      margin-bottom: 69px;
     }
 
     &--comments {
@@ -671,6 +680,12 @@
     justify-content: space-between;
   }
 
+  .form__title {
+    &--contacts {
+      margin-bottom: 75px;
+    }
+  }
+
   .form__item {
     &--contacts {
       width: 570px;
@@ -683,12 +698,18 @@
   }
 
   .form__label {
-    &--contacts {
-      margin-right: 18px;
-    }
-
     &--options {
       margin-right: 0;
+    }
+  }
+
+  .form__svg {
+    &--mail {
+      right: 20px;
+    }
+
+    &--phone {
+      right: 20px;
     }
   }
 
@@ -704,7 +725,7 @@
     }
 
     &--options {
-      margin-bottom: 68px;
+      margin-bottom: 64px;
     }
   }
 
