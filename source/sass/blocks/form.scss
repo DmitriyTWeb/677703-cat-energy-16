@@ -440,7 +440,7 @@
     }
 
     &--comments {
-      margin-bottom: 65px;
+      margin-bottom: 64px;
     }
 
     &--options {
@@ -462,7 +462,7 @@
     margin-bottom: 20px;
 
     &--program-type {
-      margin-bottom: 33px;
+      margin-bottom: 31px;
 
       &:last-child {
         margin-bottom: 0;
@@ -470,7 +470,7 @@
     }
 
     &--contacts {
-      margin-bottom: 22px;
+      margin-bottom: 20px;
     }
 
     &--options {
@@ -480,7 +480,7 @@
     }
 
     &--personal-data {
-      margin-bottom: 22px;
+      margin-bottom: 20px;
 
       &:last-child {
         margin-bottom: 0;
@@ -541,7 +541,14 @@
     padding-bottom: 12px;
     padding-left: 19px;
 
+    &--personal-data {
+      padding-bottom: 11px;
+    }
+
     &--contacts {
+      padding-top: 10px;
+      padding-bottom: 10px;
+
       background-position: right 20px center;
     }
 
@@ -595,7 +602,7 @@
     }
 
     &--contacts {
-      margin-bottom: 76px;
+      margin-bottom: 77px;
 
       &::after {
         left: 555px;
@@ -642,7 +649,7 @@
   }
 
   .form__footnote {
-    margin-left: 60px;
+    margin-left: 62px;
     font-size: 16px;
     line-height: 16px;
 
@@ -660,7 +667,7 @@
 
     &--data {
       justify-content: space-between;
-      margin-bottom: 72px;
+      margin-bottom: 70px;
     }
 
     &--options {
@@ -682,7 +689,7 @@
     }
 
     &--contacts {
-      margin-bottom: 69px;
+      margin-bottom: 66px;
     }
 
     &--comments {
@@ -690,7 +697,7 @@
     }
 
     &--options {
-      margin-bottom: 18px;
+      margin-bottom: 17px;
     }
   }
 
@@ -740,7 +747,7 @@
     }
 
     &--options {
-      margin-bottom: 64px;
+      margin-bottom: 67px;
     }
   }
 
